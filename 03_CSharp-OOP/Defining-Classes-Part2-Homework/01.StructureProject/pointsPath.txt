@@ -1,0 +1,5 @@
+The point has the following coordinates: x=10, y=20, z=30
+The point has the following coordinates: x=15, y=25, z=35
+The point has the following coordinates: x=25, y=30, z=50
+The point has the following coordinates: x=35, y=50, z=60
+The point has the following coordinates: x=40, y=60, z=65
