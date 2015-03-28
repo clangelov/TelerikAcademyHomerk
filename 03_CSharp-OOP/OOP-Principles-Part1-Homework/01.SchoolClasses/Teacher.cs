@@ -14,7 +14,7 @@
         }
         public List<Disciplines> Disciplines
         {
-            get { return this.discipline; }
+            get { return new List<Disciplines>(this.discipline); }
             private set { this.discipline = value; }
         }
         public override string ToString()
