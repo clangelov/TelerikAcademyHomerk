@@ -1,0 +1,52 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Problem 2. Nested Lists</title>
+    <!-- type: disc,square and circle are Not supported in HTML5 so I added a CSS file-->    
+    <!-- http://www.w3schools.com/tags/tag_ul.asp -->
+    <link href="SquareAndCircle.css" rel="stylesheet" />
+</head>
+<body>
+
+    <p>A nested list</p>
+
+    <ol type="I">
+        <li>
+            List item 1
+            <ol type="a">
+                <li>Nested item 1.1</li>
+                <li>Nested item 1.2</li>
+            </ol>
+        </li>
+        <li>
+            List item 2
+            <ol type="1">
+                <li>Nested item 2.1</li>
+                <li>
+                    Nested item 2.2
+                    <ul class="Circle">
+                        <li>Nested item 2.2.1</li>
+                        <li>
+                            Nested item 2.2.2
+                            <ul class="Square">
+                                <li>Nested item 2.2.2.1</li>
+                                <li>Nested item 2.2.2.2</li>
+                            </ul>
+                        </li>
+                        <li>Nested item 2.2.3</li>
+                    </ul>
+                </li>
+                <li>Nested item 2.3</li>
+            </ol>
+        </li>
+        <li>           
+            List item 3
+            <ul class="Disc">
+                <li>Nested item 3.1</li>
+                <li>Nested item 3.2</li>
+                <li>Nested item 3.3</li>
+            </ul>
+        </li>        
+    </ol>
+</body>
+</html>

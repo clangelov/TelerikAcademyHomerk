@@ -1,0 +1,10 @@
+﻿body {
+    background-color: azure;
+}
+#picOfDoge{
+    border: 2px solid;
+    width: 100px;
+}
+.BoldInfo{
+    font-weight: bold;
+}
