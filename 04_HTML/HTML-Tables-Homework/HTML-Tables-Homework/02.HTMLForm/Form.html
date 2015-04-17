@@ -1,0 +1,27 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Problem 2. HTML Form</title>
+    <link href="StyleBold.css" rel="stylesheet" />
+</head>
+<body>
+    <h3><strong><u>Simple form</u></strong></h3>
+    <form action="/" method="post"></form>
+
+    <label>Member name: </label>         
+    <input type="text" name="Member name" placeholder="Enter your name" required="required" />
+    <span class="BoldText">*req</span>
+    <br />
+
+    <label>Email: </label> 
+    <input type="email" name="Email" placeholder="Enter your e-mail" required="required" pattern="[A-Za-z0-9_\-\+]+@[A-Za-z0-9\-]+\.([A-Za-z]{2,3})(?:\.[a-z]{2})?" />
+    <span class="BoldText">*req</span>
+    <br />
+
+    <label>Scool: </label>
+    <input type="text" name="School" placeholder="Enter your School" required="required" />
+    <span class="BoldText">*req</span>
+    <br />
+    <input id="SubmitButton" type="image" src=" submit.jpg" alt="Submit" name="Submit button" />
+</body>
+</html>
