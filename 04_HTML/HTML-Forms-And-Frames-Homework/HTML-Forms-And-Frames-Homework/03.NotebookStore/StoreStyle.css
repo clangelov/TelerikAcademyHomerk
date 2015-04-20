@@ -1,0 +1,27 @@
+﻿img{
+    width: 100px;
+} 
+.BorderOne,th {    
+    border-collapse: collapse;
+    border: 1.5px solid black;
+    padding-bottom: 0.5em;
+    padding-top: 0.5em;    
+}
+.BorderTwo{
+    border: 1.5px solid black;
+    padding: 50px;
+    margin:0.5em;
+}
+a{
+    color: #00AEEF;
+}
+tr{
+    font-family: Calibri, 'Times New Roman';
+    font-weight: 500; 
+}
+.TableThree{
+    text-align: center;
+}
+fieldset{
+    margin: 0.5em;
+}

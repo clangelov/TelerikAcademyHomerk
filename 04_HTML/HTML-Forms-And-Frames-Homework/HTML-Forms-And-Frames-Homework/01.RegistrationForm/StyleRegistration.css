@@ -1,0 +1,25 @@
+﻿table {
+    border-collapse: collapse;
+    column-count: 2;
+    width: 35%;
+}
+table, td{
+    border: 1px solid black;
+}
+tfoot{
+    background-color: lightblue;
+    text-align: center;
+}
+label{
+    font-weight: bold;
+}
+.textBox{
+    width: 90%;
+    height: 5em
+}
+.longTextBox{
+    width:95%; 
+}
+.shortTextBox{
+    width:15%;
+}

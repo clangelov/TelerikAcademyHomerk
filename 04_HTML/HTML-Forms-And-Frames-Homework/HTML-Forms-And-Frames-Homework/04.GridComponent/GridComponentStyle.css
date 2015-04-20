@@ -1,0 +1,44 @@
+﻿table {
+    border-collapse: collapse;
+    font-family: 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+table, td, th{
+    border: 1px solid black;
+}
+a{
+    text-decoration: none;
+}
+#rightCorner{
+    float: right;
+    vertical-align: middle;    
+}
+.button{
+    vertical-align:middle;
+}
+tfoot {
+    background-color: #CFD3D8;
+}
+#inputLine{
+    background-color: #CFD3D8;	
+    vertical-align: top;
+}
+thead, th{
+    font-weight: normal;
+    background-color: #E7E9EB;
+}
+label{
+    margin-left: 1em;
+}
+#leftCorner{   
+    float: left;   
+}
+.textBox{
+    width: 75%;
+    vertical-align: top;
+}
+.smallField{
+    width: 10%;
+}
+#largeField{
+    width: 26%;
+}

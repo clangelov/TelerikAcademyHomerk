@@ -1,0 +1,89 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Problem 1. Registration form</title>
+    <meta charset="utf-8" />     
+    <link href="StyleRegistration.css" rel="stylesheet" />
+</head>
+<body>
+    <form>
+        <table>
+            <colgroup><col style="width:30%"><col></colgroup>
+            <tfoot>
+                <tr>
+                    <td colspan="2"><input type="submit" name="SubmitButton" value="Submit" />
+                        <input type="reset" name="ResetButton" value="Clean This Form" /></td>
+                </tr>
+            </tfoot> 
+            <tbody>
+                <tr>
+                    <td><label>Last Name</label></td>
+                    <td ><input type="text" name="LastName"  class="longTextBox"/></td>
+                </tr>
+                <tr>
+                    <td><label>First Name</label></td>
+                    <td><input type="text" name="FirstName" class="longTextBox" /></td>
+                </tr>
+                <tr>
+                    <td><label>Adress</label></td>
+                    <td><textarea class="textBox"></textarea></td>
+                </tr>
+                <tr>
+                    <td><label>City</label></td>
+                    <td><input type="text" name="City" /> 
+                    State 
+                    <input type="text" name="State" class="shortTextBox"/></td>
+                </tr>
+                <tr>
+                    <td><label>Zip/Postal Code</label></td>
+                    <td><input type="text" name="Zip" class="shortTextBox" /></td>
+                </tr>
+                <tr>
+                    <td><label>Country</label></td>
+                    <td><select>
+                        <option value="1">Bahamas</option>
+                        <option value="2" selected="selected">Bulgaria</option>
+                        <option value="3">Côte d'Ivoire</option>
+                        <option value="4">Cuba</option>
+                        <option value="5">Dominican Republic</option>
+                        <option value="6">Jamaica</option>
+                        <option value="7">Puerto Rico</option>
+                        <option value="8">Sri Lanka</option>
+                    </select></td>
+                </tr>
+                <tr>
+                    <td><label>Phone(country code, area code, number)</label></td>
+                    <td>(+<input type="text" name="CountryCode" class="shortTextBox" />) 
+                        <input type="text" name="AreaCode" class="shortTextBox" /> 
+                    <input type="text" name="Number"  /></td>
+                </tr>
+                <tr>
+                    <td><label>Email</label></td>
+                    <td><input type="email" name="Email" pattern="[A-Za-z0-9_\-\+]+@[A-Za-z0-9\-]+\.([A-Za-z]{2,3})(?:\.[a-z]{2})?" class="longTextBox" /></td>
+                </tr>
+                <tr>
+                    <td><label>Birth date</label></td>
+                    <td><input type="text" name="BirthDate" placeholder="дд.мм.гггг г."  /></td>
+                </tr>
+                <tr>
+                    <td><label>Gender</label></td>
+                    <td><select>
+                        <option value="1" selected="selected">Male</option>
+                        <option value="2">Female</option>
+                        <option value="3">Other</option>
+                    </select></td>
+                </tr>
+                <tr>
+                    <td><label>Starting Date</label></td>
+                    <td><input type="radio" name="StartingDate" /> Spring 2015
+                        <input type="radio" name="StartingDate" /> Summer 2015</td>
+                </tr>
+                <tr>
+                    <td><label>Comments/Questions</label></td>
+                    <td><textarea class="textBox"></textarea></td>
+                </tr>
+            </tbody>            
+        </table>
+    </form>
+</body>
+</html>
