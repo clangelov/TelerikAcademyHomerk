@@ -1,0 +1,15 @@
+﻿img{
+    height: 3em;
+}
+a {
+    text-decoration: none;
+}
+table, td {
+    border-collapse: collapse;
+    border: 2px solid rgb(128, 128, 128);
+    margin: auto;
+}
+#logo{
+    float: left;
+    margin-right: 1em;
+}

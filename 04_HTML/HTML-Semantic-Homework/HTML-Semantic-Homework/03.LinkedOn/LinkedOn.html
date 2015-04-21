@@ -1,0 +1,93 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Problem 3. LinkedIn</title>
+</head>
+<body>
+    <header>
+        <h2><a href="#">LinkedOn</a></h2>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">What is LinkedOn</a></li>
+                <li><a href="#">Join Today</a></li>
+                <li>
+                    <fieldset style="float:left">
+                        <legend>Sign In</legend>
+                        <form>
+                            <ul>
+                                <li>
+                                    <label>Email:</label>
+                                    <input type="email" name="Email" pattern="[A-Za-z0-9_\-\+]+@[A-Za-z0-9\-]+\.([A-Za-z]{2,3})(?:\.[a-z]{2})?" />
+                                </li>
+                                <li>
+                                    <label>Password:</label>
+                                    <input type="password" name="Password" />
+                                </li>
+                                <li>
+                                    <input type="submit" name="signin" value="Sign In" />
+                                </li>
+                            </ul>
+                        </form>
+                    </fieldset>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <br />
+    <br />
+    <br />
+    <hr />
+    <section>
+        <h1>Over 175 creatures use LinkedOn to exchange everything</h1>
+        <ul>
+            <li>Stay Informed about yuor contacts</li>
+            <li>Find the people you need</li>
+            <li>Control your identity online</li>
+        </ul>
+    </section>
+    <section>
+        <h2>Join LinkedOn Today</h2>
+        <fieldset>
+            <legend>Sign Up</legend>
+            <form>
+                <ul>
+                    <li>
+                        <label>Fist Name</label> <br />
+                        <input type="text" name="FirstName" />
+                    </li>
+                    <li>
+                        <label>Last Name</label> <br />
+                        <input type="text" name="LastName" />
+                    </li>
+                    <li>
+                        <label>Email:</label> <br />
+                        <input type="email" name="Email" pattern="[A-Za-z0-9_\-\+]+@[A-Za-z0-9\-]+\.([A-Za-z]{2,3})(?:\.[a-z]{2})?" />
+                    </li>
+                    <li>
+                        <label>Password:</label> <br />
+                        <input type="password" name="Password" /> <br />
+                        <p>6 or more characters</p>
+                    </li>                    
+                </ul>                
+                <p><input type="submit" value="Join Now" /></p>
+                <p>Already on LinkedOn? <a href="#">Sign in.</a></p>
+            </form>
+        </fieldset>
+    </section>
+    <section>
+        <h3>Search for someone by Name:</h3>
+        <ul>
+            <li>
+                <label>Fist Name</label>
+                <input type="text" name="FirstName" placeholder="First Name"/>
+            </li>
+            <li>
+                <label>Last Name</label>
+                <input type="text" name="LastName" placeholder="Last Name"/>
+            </li>
+        </ul>
+        <p><input type="submit" name="SubmitSearch"  value="Go"/></p>
+    </section>
+</body>
+</html>
