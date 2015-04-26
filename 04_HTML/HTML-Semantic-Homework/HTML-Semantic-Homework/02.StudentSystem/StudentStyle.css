@@ -7,7 +7,6 @@ a {
 table, td, th {
     border-collapse: collapse;
     border: 2px solid rgb(128, 128, 128);
-    margin: auto;
 }
 #logo{
     float: left;
