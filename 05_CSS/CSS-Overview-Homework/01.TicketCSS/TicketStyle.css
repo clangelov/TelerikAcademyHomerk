@@ -1,0 +1,46 @@
+﻿aside {
+    background-color: dimgray;
+    width: 30%;
+    margin: auto; 
+}
+table {
+    border-collapse:separate;
+    border-spacing:0 0.75em;
+    margin-left: 0.5em;
+}
+th {
+    text-align: left;
+    font-weight: normal;    
+    font-size: 1.5em;
+}
+.legend {
+    color: whitesmoke;
+    vertical-align: top;
+}
+#green-dot {
+    display: inline-block;
+    width: 0.75em;
+    height: 0.75em;
+    border-radius: 50%;
+    background-color: forestgreen;
+    margin-right: 0.25em;
+}
+.yellow-text {
+    color: #FFFAAB;
+}
+a {
+    text-decoration: none;
+}
+#red-text {
+    margin-top: -0.75em;
+    position: fixed;
+    font-weight: bold;
+    color: red;
+}
+#orange-text{
+    font-weight: bold;
+    color: orange;
+}
+.dark-gray {
+    color: darkgray;
+}

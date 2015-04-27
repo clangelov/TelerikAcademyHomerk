@@ -1,0 +1,41 @@
+﻿body {
+    background-color: #A9A9A9;
+}
+h1 {
+    color: #FAFAD2;
+    font-size: 1.5em;
+}
+#main-header {
+    text-align: center;
+    font-size: 3em;
+}
+footer {
+    text-align: center;
+}
+footer > p {
+    text-align: left;
+}
+a {
+    text-decoration: none;
+}
+ul {
+    list-style: none;
+    display: block;
+    text-align: center;
+}
+nav a {
+    color: white;
+    font-weight: bold;
+    font-size: 1.5em;
+     
+}
+nav > ul > li:last-child {
+    text-decoration: underline;
+    color: white;
+}
+.current {
+    background-color: #D3D3D3;
+} 
+p a {
+    color: black;
+}
