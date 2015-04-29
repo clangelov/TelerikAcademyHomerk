@@ -1,0 +1,15 @@
+﻿body{
+    color: #0094ff;
+}
+h1::first-letter {
+    font-size: 2em;
+    font-family: 'Edwardian Script ITC', cursive;
+}
+h1 {
+    font-weight: bold;
+    font-size: 1em;
+}
+h1, p {
+    font-family: 'Consolas',  monospace;
+}
+
