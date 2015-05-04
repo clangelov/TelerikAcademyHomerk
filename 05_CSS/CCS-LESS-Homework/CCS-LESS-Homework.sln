@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01.ForumPost", "01.ForumPost\01.ForumPost.csproj", "{BB8A76A4-1B4F-4E48-8215-5059861B0259}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02.WebGallery", "02.WebGallery\02.WebGallery.csproj", "{909A0B30-9BBF-4287-9BE0-E395DF85DF37}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BB8A76A4-1B4F-4E48-8215-5059861B0259}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BB8A76A4-1B4F-4E48-8215-5059861B0259}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BB8A76A4-1B4F-4E48-8215-5059861B0259}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BB8A76A4-1B4F-4E48-8215-5059861B0259}.Release|Any CPU.Build.0 = Release|Any CPU
+		{909A0B30-9BBF-4287-9BE0-E395DF85DF37}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{909A0B30-9BBF-4287-9BE0-E395DF85DF37}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{909A0B30-9BBF-4287-9BE0-E395DF85DF37}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{909A0B30-9BBF-4287-9BE0-E395DF85DF37}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

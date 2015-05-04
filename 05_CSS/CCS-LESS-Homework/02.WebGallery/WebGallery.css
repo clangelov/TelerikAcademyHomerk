@@ -1,0 +1,17 @@
+﻿body {
+  margin: 20px;
+}
+body label img {
+  width: 160px;
+  height: 120px;
+  cursor: pointer;
+}
+body input,
+body input + img {
+  display: none;
+}
+body input:checked + img {
+  display: block;
+  width: 640px;
+}
+
