@@ -14,7 +14,7 @@ var width = [3, 2.5, 5], //Feel free to add or remove numbers, but
     loops = width.length,
     i;
 
-for (i = 0; i < loops; i++) {
+for (i = 0; i < loops; i+=1) {
     if (width[i] !== undefined && height[i] !== undefined) {
         console.log('The area of rectangle with width of ' + width[i] + ' and height of '
             + height[i] + ' is ' + width[i] * height[i]);
