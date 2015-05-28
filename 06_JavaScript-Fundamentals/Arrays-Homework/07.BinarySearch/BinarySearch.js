@@ -6,9 +6,6 @@ Write a script that finds the index of given element in a sorted array of intege
 var array = [],
     arrLength = 20, // You may edit this number to get larger array of numbers
     lookingFor,
-    mid,
-    left,
-    right,
     i;
 
 array = randomNumbers(arrLength); // Random generated numbers between 1 and 100
@@ -19,13 +16,16 @@ lookingFor = array[Math.random() * arrLength | 0]; // Picking a random position 
 console.log('Looking for: ' + lookingFor);
 
 console.log('It\'s at position: '
-    + binarySearch(array, lookingFor, 0, array.length));
+    + binarySearch(array, lookingFor));
 
-function binarySearch(array, lookingFor, left, right) {
+function binarySearch(array, lookingFor) {
     
-    while (left <= right) {
+    var left = 0;
+    var right = array.length;
 
-        middle = (left + right) / 2 | 0;
+    while (left <= right) {
+        
+        var middle = (left + right) / 2 | 0;
 
         if (array[middle] === lookingFor) // check if number is in the middle of the array
         {
