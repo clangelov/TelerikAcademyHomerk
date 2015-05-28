@@ -10,18 +10,17 @@ input	output
 */
 
 var array = [512, 1024, 12309, 0, 123, 'hi'],
-    loops = array.length,
-    digit,
+    loops,
     i;
 
-for (i = 0; i < loops; i+=1) {
+for (i = 0, loops = array.length; i < loops; i+=1) {
 
     console.log('The last digit in ' + array[i] + ' is ' + findLastDigit(array[i]));
 }
 
 function findLastDigit(number) {
 
-    digit = number % 10;
+    var digit = number % 10;
 
     switch (digit) {
         case 0:

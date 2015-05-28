@@ -9,23 +9,22 @@ input	output
 */
 
 var array = [256, 123.45, 6000, 5001, 3.14],
-    loops = array.length,
-    number,
-    reversed,
+    loops,
     i;
 
-for (i = 0; i < loops; i += 1) {
+for (i = 0, loops = array.length; i < loops; i += 1) {
 
     console.log('The number ' + array[i] + ' reversed is ' + reverseNumber(array[i]));
 }
 
 function reverseNumber(number) {
 
-    number = number.toString();
-    reversed = '';
+    var numStr = number.toString(),
+        reversed = '',
+        i;
 
-    for (i = number.length - 1; i >= 0; i -= 1) {
-        reversed += number[i];
+    for (i = numStr.length - 1; i >= 0; i -= 1) {
+        reversed += numStr[i];
     }
 
     return reversed * 1;

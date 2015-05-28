@@ -17,7 +17,7 @@ class LettersCount
 
         foreach (char character in input)
         {
-            // with Letters.ContainsKey(character) i just add the given char and ste the initial value to 1
+            // with Letters.ContainsKey(character) i just add the given char and set the initial value to 1
             if (char.IsLetter(character) == true && !Letters.ContainsKey(character))
             {
                 Letters.Add(character, 1);

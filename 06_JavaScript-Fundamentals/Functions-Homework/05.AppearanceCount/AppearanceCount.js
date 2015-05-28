@@ -3,18 +3,15 @@
 Write a function that counts how many times given number appears in given array.
 Write a test function to check if the function is working correctly.
 */
-var array = [],
-    loops = 20, // You may edit the length of the array
-    number,
-    counter,
-    i;
+var i,
+    loops = 20;
 
 testTask(loops);
 
 function testTask(loops) {
 
-    array = randomNumbers(loops); // Random generated array with numbers between 1 and 5
-    number = array[Math.random() * loops | 0]; // Picking a random position out of the array
+    var array = randomNumbers(loops), // Random generated array with numbers between 1 and 5
+        number = array[Math.random() * loops | 0]; // Picking a random position out of the array
     
     console.log('Initial array is: ' + array.join(', '));
     console.log('You can find the number ' + number + ' in this array ' + findOccurrence(array, number) + ' times');
@@ -22,8 +19,9 @@ function testTask(loops) {
 
 function findOccurrence (array, number) {
 
-    counter = 0;
-    loops = array.length;
+    var counter = 0,
+        loops = array.length;
+        
 
     for (i = 0; i < loops; i += 1) {
 
@@ -35,7 +33,9 @@ function findOccurrence (array, number) {
     return counter;
 }
 
-function randomNumbers(loops) {
+function randomNumbers(loops) {    
+    
+    var array = [];
 
     for (i = 0; i < loops; i += 1) {
 

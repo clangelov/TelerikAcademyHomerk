@@ -18,7 +18,7 @@ console.log('The index of the first element that is larger than its neighbours i
 
 function firstPosition(array) {
 
-    loops = array.length;
+    var loops = array.length;
 
     for (i = 1; i < loops - 1; i+=1) {
 
