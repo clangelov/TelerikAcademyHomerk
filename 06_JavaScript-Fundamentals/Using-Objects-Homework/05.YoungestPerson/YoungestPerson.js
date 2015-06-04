@@ -15,7 +15,6 @@ var p1,
     p3,
     p4,
     p5,
-    length,
     people = [];
 
 p1 = new Person('Mike', 'Johnson', 25);

@@ -34,6 +34,6 @@ console.log('Print object One name (is it Alex?) NO it\'s ' + objOne.name); // b
 
 objOne = deepCopy(objTwo); // the deepCopy will fix this problem
 objTwo.name = 'Alexis'; // setting the name to the second object
-console.log('Changed second object name to Alexis');
-console.log('Oooh object Name is "Alexis"? NO it remains: ' + objOne.name); // now the name of the first object remains intact
+console.log('Performing a deep copy and Changed second object name to Alexis');
+console.log('Oooh object one Name is "Alexis"? NO it remains: ' + objOne.name); // now the name of the first object remains intact
 console.log('Only the name of the second object is changed to ' + objTwo.name);
