@@ -43,7 +43,7 @@ console.log('Task 02:');
 
 var isAllAdult = persons.every(function (item) {
 
-    return item.age > 18;
+    return item.age >= 18;
 });
 
 console.log('Is everyone over 18 years old? ' + isAllAdult);
