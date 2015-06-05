@@ -6,13 +6,13 @@ Generate an array with ten person with different names, ages and genders
 */
 
 var persons = [
-    new Person('Enner', 'Valencia', 25, 'male'),
-    new Person('Charlotte ', 'Le Bonne', 29, 'female'),
+    new Person('Kim', 'Valencia', 25, 'male'),
+    new Person('Charlotte', 'Le Bonne', 29, 'female'),
     new Person('James', 'Tomkins', 15, 'male'),
     new Person('Helen', 'Owen', 17, 'female'),
     new Person('Kevin', 'Nolan', 32, 'male'),
     new Person('Audrey', 'Tautou', 39, 'female'),
-    new Person('Gerard', 'Pique', 21, 'male'),
+    new Person('Jerard', 'Pique', 21, 'male'),
     new Person('Penelope', 'Cruz', 41, 'female'),
     new Person('Jean', 'Dujardin', 42, 'male'),
     new Person('Keira', 'Knightley', 29, 'female')
@@ -146,3 +146,24 @@ var youngestPerson = persons.find(function (item) {
 });
 
 console.log(JSON.stringify(youngestPerson));
+
+console.log(new Array(31).join('-'));
+
+/* Problem 6. Group people
+
+Write a function that groups an array of persons by first letter of first name and returns the groups as a JavaScript Object
+Use Array#reduce
+Use only array methods and no regular loops (for, while)
+*/
+
+var sorted = persons.reduce(function (obj, item) {
+
+    if (obj[item.firstName[0]]) {
+        obj[item.firstName[0]].push(item);
+    } else {
+        obj[item.firstName[0]] = [item];
+    }
+    return obj;
+}, {});
+
+console.log('Task 06:' + JSON.stringify(sorted));
