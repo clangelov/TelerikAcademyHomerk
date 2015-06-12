@@ -28,7 +28,7 @@ function countWord(texts, looking) {
     while (index !== -1) {
 
         counter += 1;
-        index = someText.indexOf(lookingFor, index + 1);
+        index = text.indexOf(lookingFor, index + 1);
     }
 
     return counter;
