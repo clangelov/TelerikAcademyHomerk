@@ -19,7 +19,7 @@ function sum(arr) {
     }
 
 
-    if (arr.some(function (element) { return isNaN(element) } )) {
+    if (arr.some(function (element) { return element === null || isNaN(element) } )) {
         throw  {message: 'Not all elements of the array are numbers'};
     }
 
