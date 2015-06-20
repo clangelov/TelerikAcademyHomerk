@@ -14,8 +14,8 @@
 
     var browser = navigator.appName,
         addScroll = false,
-        pointX = 0,
-        pointY = 0;
+        posX = 0,
+        posY = 0;
 
     document.onmousemove = mouseMove;
 
@@ -29,11 +29,11 @@
 
     function mouseMove(evn) {
         if (browser === "Netscape") {
-            pointX = evn.pageX - 5;
-            pointY = evn.pageY;
+            posX = evn.pageX - 5;
+            posY = evn.pageY;
         } else {
-            pointX = event.x - 5;
-            pointY = event.y;
+            posX = event.x - 5;
+            posY = event.y;
         }
 
         if (browser === "Netscape") {
@@ -54,30 +54,30 @@
         if (browser === "Netscape") {
             theLayer = eval('document.layers[\'ToolTip\']');
 
-            if ((pointX + 120) > window.innerWidth) {
-                pointX = window.innerWidth - 150;
+            if ((posX + 120) > window.innerWidth) {
+                posX = window.innerWidth - 150;
             }
 
-            theLayer.left = pointX + 10;
-            theLayer.top = pointY + 15;
+            theLayer.left = posX + 10;
+            theLayer.top = posY + 15;
             theLayer.visibility = 'show';
         } else {
             theLayer = eval('document.all[\'ToolTip\']');
 
             if (theLayer) {
-                pointX = event.x - 5;
-                pointY = event.y;
+                posX = event.x - 5;
+                posY = event.y;
 
                 if (addScroll) {
-                    pointX = pointX + document.body.scrollLeft;
-                    pointY = pointY + document.body.scrollTop;
+                    posX = posX + document.body.scrollLeft;
+                    posY = posY + document.body.scrollTop;
                 }
-                if ((pointX + 120) > document.body.clientWidth) {
-                    pointX = pointX - 150;
+                if ((posX + 120) > document.body.clientWidth) {
+                    posX = posX - 150;
                 }
 
-                theLayer.style.pixelLeft = pointX + 10;
-                theLayer.style.pixelTop = pointY + 15;
+                theLayer.style.pixelLeft = posX + 10;
+                theLayer.style.pixelTop = posY + 15;
                 theLayer.style.visibility = 'visible';
             }
         }
