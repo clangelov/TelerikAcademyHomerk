@@ -58,6 +58,14 @@ function solve() {
 
 				return this;
 			},
+			removeAttribute: function(attribute){
+
+				checkIfAttributeExist(this, attribute);
+
+				delete this.attributes[attribute];
+
+				return this;
+			},
 			get innerHTML() {
 
 				var resultAsString = [],
@@ -92,6 +100,13 @@ function solve() {
 				return resultAsString.join('');
 			}
 		};
+
+		function checkIfAttributeExist(object, attribute) {
+
+			if (!object.attributes.hasOwnProperty(attribute)) {
+				throw {message: 'This attribute does not exist'};
+			}
+		}
 
 		function addAttributesToResult(object) {
 
