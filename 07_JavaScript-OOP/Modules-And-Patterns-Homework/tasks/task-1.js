@@ -48,11 +48,12 @@ function solve() {
 
 	var Student = (function () {
 
-		var Student = {
-			init: function (firstname, lastname, id) {
+		var id = 0,
+			Student = {
+			init: function (firstname, lastname) {
 				this.firstname = firstname;
 				this.lastname = lastname;
-				this.id = id;
+				this.id = ++id;
 			}
 		};
 
@@ -93,11 +94,9 @@ function solve() {
 		return Student;
 	}());
 
-	var id = 0;
-
 	var Course = {
 		init: function (title, presentations) {
-			id = 0;
+			// this.id = 0;
 			this.title = title;
 			this.presentations = presentations;
 			this.students = [];
@@ -117,9 +116,9 @@ function solve() {
 				lastName = names[1].trim(),
 				objToPush = Object.create(Student);
 
-			id += 1;
+			// this.id += 1;
 
-			objToPush.init(firstName, lastName, id);
+			objToPush.init(firstName, lastName);
 
 			this.students.push(objToPush);
 			return objToPush.id;
