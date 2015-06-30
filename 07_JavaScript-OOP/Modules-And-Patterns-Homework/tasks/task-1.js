@@ -49,7 +49,7 @@ function solve() {
 	var Student = (function () {
 
 		var Student = {
-			init: function (firstname, lastname) {
+			init: function (firstname, lastname, id) {
 				this.firstname = firstname;
 				this.lastname = lastname;
 				this.id = id;
