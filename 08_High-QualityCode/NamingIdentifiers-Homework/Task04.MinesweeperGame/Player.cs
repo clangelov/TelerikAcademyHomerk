@@ -11,8 +11,8 @@
 
         public Player(string name, int points)
         {
-            this.name = name;
-            this.points = points;
+            this.Name = name;
+            this.Points = points;
         }
 
         public string Name
