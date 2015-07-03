@@ -131,7 +131,10 @@ function solve() {
 			return this;
 		},
 		pushExamResults: function (results) {
-			throw {message: 'Not implemented'};
+
+			// Just validation no actual functionality
+			validateResults(this, results);
+
 		},
 		getTopStudents: function () {
 			throw {message: 'Not implemented'};
@@ -212,6 +215,43 @@ function solve() {
 		if (homeworkID > object.presentations.length || homeworkID < 1) {
 			throw {message: 'Invalid Homework ID'};
 		}
+	}
+
+	function validateResults(course, results){
+
+		var i,
+			j,
+			len,
+			checkId;
+
+		if (!Array.isArray(results)) {
+			throw {message: 'You must pass an Array as argument'};
+		}
+
+		for (i = 0, len = results.length; i < len; i += 1) {
+			checkId = results[i].StudentID;
+			for (j = i + 1, len = results.length; j < len; j += 1) {
+				if (checkId === results[j].StudentID) {
+					throw {message: 'Dupliacting IDs'};
+				}
+			}
+		}
+
+		results.some(function(object) {
+			if(typeof object.StudentID !== 'number') {
+				throw {message: 'Student ID must be a number'};
+			}
+			if (object.StudentID < 0 || object.StudentID > course.id) {
+
+				throw {message: 'Invalid Student ID in the course database'};
+			}
+			if (!object.hasOwnProperty('score')) {
+				throw {message: 'Score is missing'};
+			}
+			if (!object.hasOwnProperty('StudentID')) {
+				throw {message: 'Student is missing'};
+			}
+		});
 	}
 
 	return Course;
