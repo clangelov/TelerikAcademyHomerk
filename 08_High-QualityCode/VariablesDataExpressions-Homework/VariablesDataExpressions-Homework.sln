@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Task01.Figure", "Task01.Figure\Task01.Figure.csproj", "{92F1B56C-6D7D-46E9-B745-3DFA6F982E10}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Task02.MethodPrintStatistics", "Task02.MethodPrintStatistics\Task02.MethodPrintStatistics.csproj", "{CEE24997-F8E1-4064-A4C1-D4A43C346F56}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{92F1B56C-6D7D-46E9-B745-3DFA6F982E10}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{92F1B56C-6D7D-46E9-B745-3DFA6F982E10}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{92F1B56C-6D7D-46E9-B745-3DFA6F982E10}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{92F1B56C-6D7D-46E9-B745-3DFA6F982E10}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CEE24997-F8E1-4064-A4C1-D4A43C346F56}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CEE24997-F8E1-4064-A4C1-D4A43C346F56}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CEE24997-F8E1-4064-A4C1-D4A43C346F56}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CEE24997-F8E1-4064-A4C1-D4A43C346F56}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
