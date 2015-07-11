@@ -8,33 +8,33 @@ namespace Task02.MethodPrintStatistics
 
     internal class Statistics
     {
-        public void PrintStatisticsToConsole(double[] numbers)
+        public void PrintStatisticsToConsole(double[] numbersCollection)
         {
-            double maxNumber = this.FindMaxNumber(numbers);
+            double maxNumber = this.FindMaxNumber(numbersCollection);
             Console.WriteLine(maxNumber);
 
-            double minNumber = this.FindMinNumber(numbers);
+            double minNumber = this.FindMinNumber(numbersCollection);
             Console.WriteLine(minNumber);
 
-            double averageNumber = this.FindAverageNumber(numbers);
+            double averageNumber = this.FindAverageNumber(numbersCollection);
             Console.WriteLine(averageNumber);
         }
 
-        private double FindMaxNumber(double[] array)
+        private double FindMaxNumber(double[] numbersCollection)
         {
-            double max = array.Max();
+            double max = numbersCollection.Max();
             return max;
         }
 
-        private double FindMinNumber(double[] array)
+        private double FindMinNumber(double[] numbersCollection)
         {
-            double min = array.Min();
+            double min = numbersCollection.Min();
             return min;
         }
 
-        private double FindAverageNumber(double[] array)
+        private double FindAverageNumber(double[] numbersCollection)
         {
-            double average = array.Average();
+            double average = numbersCollection.Average();
             return average;
         }
     }   
