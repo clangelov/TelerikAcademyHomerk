@@ -56,11 +56,11 @@
 
         private static bool IsInRange(int positionX, int positionY)
         {
-            if (MinXPosition > positionX || positionX > MaxXPosition)
+            if (positionX < MinXPosition || positionX > MaxXPosition)
             {
                 return false;
             }
-            else if (MinYPosition > positionY || positionY > MaxYPosition)
+            else if (positionY < MinYPosition || positionY > MaxYPosition)
             {
                 return false;
             }
