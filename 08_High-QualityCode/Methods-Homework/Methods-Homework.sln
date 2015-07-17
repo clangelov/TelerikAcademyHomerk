@@ -1,0 +1,40 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Task01.QualityMethods", "Task01.QualityMethods\Task01.QualityMethods.csproj", "{4D140329-B4ED-4109-8552-7840E5A1B7FF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Task02.1.MathProblem", "Task02.1.MathProblem\Task02.1.MathProblem.csproj", "{3F663575-FD15-478E-A089-AB660D92F3F1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Task02.2.SumDifferences", "Task02.2.SumDifferences\Task02.2.SumDifferences.csproj", "{CCF40673-CDDE-49BD-9A2E-910A34018A3C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Task02.3.BishopPathFinder", "Task02.3.BishopPathFinder\Task02.3.BishopPathFinder.csproj", "{FDC90228-5417-417A-AA87-0BD4A4D98429}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4D140329-B4ED-4109-8552-7840E5A1B7FF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4D140329-B4ED-4109-8552-7840E5A1B7FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4D140329-B4ED-4109-8552-7840E5A1B7FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4D140329-B4ED-4109-8552-7840E5A1B7FF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3F663575-FD15-478E-A089-AB660D92F3F1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3F663575-FD15-478E-A089-AB660D92F3F1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3F663575-FD15-478E-A089-AB660D92F3F1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3F663575-FD15-478E-A089-AB660D92F3F1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CCF40673-CDDE-49BD-9A2E-910A34018A3C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CCF40673-CDDE-49BD-9A2E-910A34018A3C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CCF40673-CDDE-49BD-9A2E-910A34018A3C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CCF40673-CDDE-49BD-9A2E-910A34018A3C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FDC90228-5417-417A-AA87-0BD4A4D98429}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FDC90228-5417-417A-AA87-0BD4A4D98429}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FDC90228-5417-417A-AA87-0BD4A4D98429}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FDC90228-5417-417A-AA87-0BD4A4D98429}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
