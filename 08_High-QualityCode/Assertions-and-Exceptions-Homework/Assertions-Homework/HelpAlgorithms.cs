@@ -1,4 +1,4 @@
-﻿/* Those methods will always get invalid data, 
+﻿/* Those methods will always get valid data, 
  * so there is no need to assert it
  */
 using System;

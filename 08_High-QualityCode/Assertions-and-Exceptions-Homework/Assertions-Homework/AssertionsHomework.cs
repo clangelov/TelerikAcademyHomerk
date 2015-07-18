@@ -14,11 +14,11 @@ public class AssertionsHomework
         SelectionSort(new int[0]); // Test sorting empty array
         SelectionSort(new int[1]); // Test sorting single element array
 
-        Console.WriteLine(BinarySearch(arr, -1000));       
-        Console.WriteLine(BinarySearch(arr, 0));       
-        Console.WriteLine(BinarySearch(arr, 17));       
-        Console.WriteLine(BinarySearch(arr, 10));         
-        Console.WriteLine(BinarySearch(arr, 1000));         
+        Console.WriteLine(BinarySearch(arr, -1000));
+        Console.WriteLine(BinarySearch(arr, 0));
+        Console.WriteLine(BinarySearch(arr, 17));
+        Console.WriteLine(BinarySearch(arr, 10));
+        Console.WriteLine(BinarySearch(arr, 1000));
     }
 
     public static void SelectionSort<T>(T[] arr) where T : IComparable<T>
@@ -26,9 +26,10 @@ public class AssertionsHomework
         Debug.Assert(arr != null, "Array can not be null");
         Debug.Assert(arr.Length != 0, "You can not pass an empty array");
 
-        for (int index = 0; index < arr.Length - 1; index++)
+        int arrayLength = arr.Length - 1;
+        for (int index = 0; index < arrayLength; index++)
         {
-            int minElementIndex = HelpAlgorithms.FindMinElementIndex(arr, index, arr.Length - 1);
+            int minElementIndex = HelpAlgorithms.FindMinElementIndex(arr, index, arrayLength);
             HelpAlgorithms.Swap(ref arr[index], ref arr[minElementIndex]);
         }
 
@@ -40,7 +41,9 @@ public class AssertionsHomework
         Debug.Assert(arr != null, "Array can not be null");
         Debug.Assert(arr.Length != 0, "You can not pass an empty array");
 
-        int result = HelpAlgorithms.BinarySearch(arr, value, 0, arr.Length - 1);
+        int startIndex = 0;
+        int endIndex = arr.Length - 1;
+        int result = HelpAlgorithms.BinarySearch(arr, value, startIndex, endIndex);
 
         AssertCorreectPositionOfElement(arr, value, result);
 
