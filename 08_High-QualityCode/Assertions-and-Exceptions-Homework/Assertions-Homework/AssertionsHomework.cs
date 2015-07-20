@@ -21,46 +21,41 @@ public class AssertionsHomework
         Console.WriteLine(BinarySearch(arr, 1000));
     }
 
+    // No Input Validations
     public static void SelectionSort<T>(T[] arr) where T : IComparable<T>
     {
-        Debug.Assert(arr != null, "Array can not be null");
-        Debug.Assert(arr.Length != 0, "You can not pass an empty array");
-
         int arrayLength = arr.Length - 1;
         for (int index = 0; index < arrayLength; index++)
         {
-            int minElementIndex = HelpAlgorithms.FindMinElementIndex(arr, index, arrayLength);
-            HelpAlgorithms.Swap(ref arr[index], ref arr[minElementIndex]);
+            int minElementIndex = AlgorithmsAssertions.FindMinElementIndex(arr, index, arrayLength);
+            AlgorithmsAssertions.Swap(ref arr[index], ref arr[minElementIndex]);
         }
 
-        AssertIfArrayIsSorted(arr);
+        Debug.Assert(ValidateIfArrayIsSorted(arr), "Array is not sorted.");
     }
 
+    // No Input Validations
     public static int BinarySearch<T>(T[] arr, T value) where T : IComparable<T>
     {
-        Debug.Assert(arr != null, "Array can not be null");
-        Debug.Assert(arr.Length != 0, "You can not pass an empty array");
-
         int startIndex = 0;
         int endIndex = arr.Length - 1;
-        int result = HelpAlgorithms.BinarySearch(arr, value, startIndex, endIndex);
-
-        AssertCorreectPositionOfElement(arr, value, result);
+        int result = AlgorithmsAssertions.BinarySearch(arr, value, startIndex, endIndex);       
 
         return result;
     }
 
-    private static void AssertIfArrayIsSorted<T>(T[] arr) where T : IComparable<T>
+    private static bool ValidateIfArrayIsSorted<T>(T[] arr) where T : IComparable<T>
     {
+        bool isSorted = true; 
+
         for (int i = 0; i < arr.Length - 1; i++)
         {
-            Debug.Assert(arr[i].CompareTo(arr[i + 1]) <= 0, "Array is not sorted.");
+            if (arr[i].CompareTo(arr[i + 1]) > 0)
+            {
+                isSorted = false;
+            }
         }
-    }
 
-    private static void AssertCorreectPositionOfElement<T>(T[] arr, T value, int result) where T : IComparable<T>
-    {
-        int index = Array.IndexOf(arr, value);
-        Debug.Assert(index == result, "Incorrect position of element");
+        return isSorted;
     }
 }

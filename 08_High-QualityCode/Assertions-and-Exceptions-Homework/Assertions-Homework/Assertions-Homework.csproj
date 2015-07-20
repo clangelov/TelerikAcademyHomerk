@@ -42,7 +42,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AssertionsHomework.cs" />
-    <Compile Include="HelpAlgorithms.cs" />
+    <Compile Include="AlgorithmsAssertions.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Properties\" />
