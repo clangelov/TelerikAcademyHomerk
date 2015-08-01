@@ -22,7 +22,7 @@
 function solve() {
 
     function validateSelector(selector) {
-        if (typeof selector === undefined) {
+        if (selector === undefined) {
             throw new {message: 'You need to pass an valid selector'};
         }
         if (typeof selector !== 'string') {
