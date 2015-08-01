@@ -20,7 +20,7 @@ module.exports = function () {
 
     return function (element, contents) {
 
-        var content,
+        var contentResult,
             divEl,
             nodeEl,
             docFragment,
@@ -32,8 +32,8 @@ module.exports = function () {
             throw new {message: 'You need to pass an valid parameter'};
         }
 
+        // may use element instanceof HTMLElement as well
         if (typeof element !== 'string' && !element.nodeType === 1) {
-            console.log('element error');
             throw new {message: 'Parameter must be a string or node element'};
         }
 
@@ -71,15 +71,17 @@ module.exports = function () {
 
         } else {
 
-            element.innerHTML = '';
+            nodeEl = element;
 
-            content = '';
+            nodeEl.innerHTML = '';
+
+            contentResult = '';
 
             for (i = 0, length = contents.length; i < length; i += 1) {
-                content += '<div>' + contents[i] + '</div>';
+                contentResult += '<div>' + contents[i] + '</div>';
             }
 
-            element.innerHTML += content;
+            nodeEl.innerHTML += contentResult;
         }
     };
 };
