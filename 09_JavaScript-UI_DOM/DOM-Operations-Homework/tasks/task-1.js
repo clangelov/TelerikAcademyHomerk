@@ -28,7 +28,7 @@ module.exports = function () {
             i,
             length;
 
-        if (typeof element === undefined || contents === undefined) {
+        if (element === undefined || contents === undefined) {
             throw new {message: 'You need to pass an valid parameter'};
         }
 
