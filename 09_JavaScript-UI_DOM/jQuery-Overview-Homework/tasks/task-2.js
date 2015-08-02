@@ -38,7 +38,7 @@ function solve() {
         var $targetEl = $(this),
             $nextEl = $targetEl.nextAll('.content').first();
 
-        if ($nextEl === null) {
+        if ($nextEl.length === 0) {
             return;
         }
 
