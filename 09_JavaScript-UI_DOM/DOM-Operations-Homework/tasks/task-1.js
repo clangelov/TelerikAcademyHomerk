@@ -29,21 +29,21 @@ module.exports = function () {
             length;
 
         if (element === undefined || contents === undefined) {
-            throw new {message: 'You need to pass an valid parameter'};
+            throw {message: 'You need to pass an valid parameter'};
         }
 
         // may use element instanceof HTMLElement as well
         if (typeof element !== 'string' && !element.nodeType === 1) {
-            throw new {message: 'Parameter must be a string or node element'};
+            throw {message: 'Parameter must be a string or node element'};
         }
 
         if (!Array.isArray(contents)) {
-            throw new {message: 'Contents must be an Array'};
+            throw {message: 'Contents must be an Array'};
         }
 
         contents.forEach(function (contentElement) {
             if (typeof contentElement !== 'string' && typeof contentElement !== 'number') {
-                throw new {message: 'Content must be a string or number'};
+                throw {message: 'Content must be a string or number'};
             }
         });
 

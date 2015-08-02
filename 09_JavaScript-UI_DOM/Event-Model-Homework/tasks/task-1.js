@@ -23,10 +23,10 @@ function solve() {
 
     function validateSelector(selector) {
         if (selector === undefined) {
-            throw new {message: 'You need to pass an valid selector'};
+            throw {message: 'You need to pass an valid selector'};
         }
         if (typeof selector !== 'string') {
-            throw new {message: 'Parameter must be a string'};
+            throw {message: 'Parameter must be a string'};
         }
     }
 
@@ -70,7 +70,7 @@ function solve() {
         nodeEl = document.getElementById(selector);
 
         if (nodeEl === null) {
-            throw new {message: 'You passed a non existing ID'};
+            throw {message: 'You passed a non existing ID'};
         }
 
         buttonEls = nodeEl.getElementsByClassName('button');
