@@ -52,7 +52,7 @@ module.exports = function () {
             nodeEl = document.getElementById(element);
 
             if (nodeEl === null) {
-                throw new {message: 'You passed a non existing ID'};
+                throw {message: 'You passed a non existing ID'};
             }
 
             nodeEl.innerHTML = '';
