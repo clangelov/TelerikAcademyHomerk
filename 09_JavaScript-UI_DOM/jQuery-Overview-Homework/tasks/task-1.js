@@ -68,11 +68,13 @@ function solve() {
            return null;
         }
 
-        $ulEl = $('<ul/>').addClass(ulClassName).appendTo($nodeEl);
+        $ulEl = $('<ul/>').addClass(ulClassName);
 
         for (i = 0; i < elementsLength; i += 1) {
             $('<li/>').addClass(liClassName).text(liContent+i).appendTo($ulEl);
         }
+
+        &ulEl.appendTo($nodeEl);
     };
 }
 
