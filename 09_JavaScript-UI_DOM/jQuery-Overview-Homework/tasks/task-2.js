@@ -36,8 +36,12 @@ function solve() {
     function showOrHideElements() {
 
         var $targetEl = $(this),
-            $nextEl = $targetEl.nextAll('.content').first();
+            $nextEl;
+        
+        //$nextEl = $targetEl.nextAll('.content').first();
 
+        $nextEl = $targetEl.nextUntil('.button').filter('.content').first();
+        
         if ($nextEl.length === 0) {
             return;
         }

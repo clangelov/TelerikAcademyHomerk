@@ -74,7 +74,7 @@ function solve() {
             $('<li/>').addClass(liClassName).text(liContent+i).appendTo($ulEl);
         }
 
-        &ulEl.appendTo($nodeEl);
+        $ulEl.appendTo($nodeEl);
     };
 }
 
