@@ -16,9 +16,9 @@
 ## Implemntation
 The client can access his drinks via different distilleries
 
-![alt text](diagrams/ factoryMethod.png)
+![alt text](diagrams/factoryMethod.png)
 
-######Abstract class Distillery – Играе ролята на Creator, който задава базов принципи
+###### Abstract class Distillery – Играе ролята на Creator, който задава базов принципи
 ~~~c#
 public abstract class Distillery
     {
@@ -35,9 +35,10 @@ public class NorthWildScotts : Distillery
             var drink = new Whisky { Taste = "Very Smoky", YearsMatured = 12 };
             return drink;
         }
-    } ~~~
+    }
+~~~
 
-######Abstract Class AlcoholicBeverage
+###### Abstract Class AlcoholicBeverage
 ~~~c#
 public abstract class AlcoholicBeverage
     {
