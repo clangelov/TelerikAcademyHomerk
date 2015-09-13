@@ -14,7 +14,7 @@
 *The Abstract Factory, Prototype, or Builder patterns, които предоставят повече гъвкавост, но и по-високо ниво на сложност
 
 ## Implemntation
-The client can access his drinks via different distilleries
+Клиента получава различно пите в зависимост от това кое Factory си е избрал 
 
 ![alt text](diagrams/factoryMethod.png)
 
@@ -103,3 +103,4 @@ public class Client
     } 
 ~~~
 
+###### Демо: [Link to GitHub]https://github.com/clangelov/TelerikAcademyHomework/tree/master/08_High-QualityCode/CreationalPatterns-Homework/demos/WhiskeyFacotryMethodDemo
