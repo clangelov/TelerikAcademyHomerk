@@ -1,82 +1,124 @@
-# Porto-Flip
-Teamwork repository for Telerik Academy team Porto Flip
+# Builder
+### Creational Design Pattern
 
-We will create an online educational platform. 
-The idea is that everyone could register as a teacher, 
-create classes and teach and examine students via the platform. 
-Users can choose wheather to sign up as students or teachers.
-The platform will give them access to study resources of the courses they 
-are signed up to. 
+## Implemntation
+Кратко демо за създаването на мобилни телефони
 
-***
-Public link to our project! 
+![alt text](diagrams/builder.png)
 
-<a href="https://github.com/fr0wsTyl/Porto-Flip/tree/master/iLearn" alt="Porto flip repo">Github for Team Porto Flip</a>
-***
+###### public class Manufacturer – Играе ролята на Director, който определя последователността на стъпки по които трябва да се създаде един мобилен телфон
+~~~c#
+public class Manufacturer
+    {
+        public void Construct(PhoneBuilder phoneBuilder)
+        {
+            phoneBuilder.BuildBattery();            
+            phoneBuilder.BuildScreen();
+            phoneBuilder.BuildOS();
+            phoneBuilder.PutPrice();
+        }
+    }
+~~~
 
-## Main Functionallity:
+###### abstract class PhoneBuilder Играе ролята на Builder, определя от каков се състои един мобилен телефон
+~~~c#
+public abstract class PhoneBuilder
+    {
+        public Phone Phone { get; set; }
 
-* Pages for Home screen Login and Register
+        public abstract void BuildBattery();
 
-* Register Strudents and Teachers
-	* There is local validation for their input data
-	* Edit your prifile details
-	* Data is saved on Parse
-	* Logout Fucntionality
-	
-* Teachers can create courses
-* Students can join courses
+        public abstract void BuildScreen();
 
-## Used Technologies
+        public abstract void BuildOS();
 
-* Extensive use of jQuery from DOM manipulations and ajax requests
-* sammy.js for creating a SPA 
-* Created separete modules for each functionality
-* KendoUI Grid used for displaying vital data and interaction like joining a Course
-* Parse is used for data storage
-* localStorage holds information for the current user
-* The application is tyled with Twitter Bootstrap
-* A fancy button allowing sharing info to Facebook, Tweeter, Google+ and LinkedIn 
+        public abstract void PutPrice();
+    }
+~~~
 
-## JavaScript files
-* courseGrid.js 
-* createCourse.js
-* edit-profile.js
-* engine.js
-* error-handler.js
-* footer.js
-* getusername.js
-* gridTable.js
-* hehader.js
-* login.js
-* logout.js
-* navigation-handler.js
-* profile-redirect.js
-* registration.js
-* routes.js
-* social.js
-* validator.js
+###### public class SmartElectronics наследява Builder-а и дефинира собствените параметри на създавания обект
+~~~c#
+public class SmartElectronics : PhoneBuilder
+    {
+        public SmartElectronics()
+        {
+            this.Phone = new Phone("Smart Electronics");
+        }
 
-## Browser Compatibility
+        public override void BuildBattery()
+        {
+            this.Phone["battery"] = "Li-Ion 1500 Mah";
+        }
 
-*The application must work in the latest versions of the following browsers  
+        public override void BuildScreen()
+        {
+            this.Phone["screen"] = "5\" OLDED";
+        }
 
-**Chrome**  
+        public override void BuildOS()
+        {
+            this.Phone["os"] = "Android";
+        }
 
-**Firefox** 
- 
-**Safari** 
+        public override void PutPrice()
+        {
+            this.Phone["price"] = "$499";
+        }
+    }
+~~~
 
-**Opera**
+###### public class Phone - продукта който се създава
+~~~c#
+public class Phone
+    {
+        private readonly string phoneManufacturer;
+        private readonly Dictionary<string, string> info = new Dictionary<string, string>();
 
-<h2 align="center">Important</h2>
-In order to run the application you need to have installed NodeJS and run the command <strong>npm install</strong> in iLearn folder. 
-Otherwise you won't be able to run the application because of the missing javascript libraries.
+        public Phone(string vehicleType)
+        {
+            this.phoneManufacturer = vehicleType;
+        }
 
-## References:
-Login documentation:
-https://www.parse.com/docs/js/guide#users-logging-in
+        public string this[string key]
+        {
+            get { return this.info[key]; }
+            set { this.info[key] = value; }
+        }
 
-<a href="https://github.com/fr0wsTyl/Porto-Flip/tree/master/iLearn" alt="Porto flip repo">Github for Team Porto Flip</a>
+        public void ShowInfo()
+        {
+            Console.WriteLine(new string('*', 30));
+            Console.WriteLine("Phone Manufacturer: {0}", this.phoneManufacturer);
+            Console.WriteLine(" Battery  : {0}", this.info["battery"]);
+            Console.WriteLine(" Screen : {0}", this.info["screen"]);
+            Console.WriteLine(" OS: {0}", this.info["os"]);
+            Console.WriteLine(" Price : {0}", this.info["price"]);
+            Console.WriteLine(new string('*', 30));
+        }
+    }
+~~~
 
-Thank you for the interest in our project
+###### Използване от страна на клиента
+~~~c#
+public class Client
+    {
+        public static void Main()
+        {
+            PhoneBuilder builder;
+
+            // We can choose concrete constructor (director)
+            var constructor = new Manufacturer();
+
+            // And we can choose concrete builder
+            builder = new ShinyTech();
+            constructor.Construct(builder);
+            builder.Phone.ShowInfo();
+
+            builder = new SmartElectronics();
+            constructor.Construct(builder);
+            builder.Phone.ShowInfo();
+        }
+    }
+~~~
+
+###### Демо: [Link to GitHub] https://github.com/clangelov/TelerikAcademyHomework/tree/master/08_High-QualityCode/CreationalPatterns-Homework/demos/MobilePhoneBuilderPatternDemo
