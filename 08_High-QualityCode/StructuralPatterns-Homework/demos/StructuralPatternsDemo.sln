@@ -5,6 +5,8 @@ VisualStudioVersion = 12.0.31101.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FacadeMortgageApplicationDemo", "FacadeMortgageApplicationDemo\FacadeMortgageApplicationDemo.csproj", "{C12695E4-D360-482B-BA4D-941BEE7D733F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlyweightFiguresDemo", "FlyweightFiguresDemo\FlyweightFiguresDemo.csproj", "{DE8CE06B-F11C-4CBD-A00C-1D47F12A00F0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{C12695E4-D360-482B-BA4D-941BEE7D733F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C12695E4-D360-482B-BA4D-941BEE7D733F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C12695E4-D360-482B-BA4D-941BEE7D733F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DE8CE06B-F11C-4CBD-A00C-1D47F12A00F0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DE8CE06B-F11C-4CBD-A00C-1D47F12A00F0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DE8CE06B-F11C-4CBD-A00C-1D47F12A00F0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DE8CE06B-F11C-4CBD-A00C-1D47F12A00F0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
