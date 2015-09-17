@@ -19,5 +19,10 @@
             base.DisplayInfo();
             Console.WriteLine("++ Powerful V8 Engine Included");
         }
+
+        public void DriveOnTrack()
+        {
+            Console.WriteLine("Driving around the local racing track");
+        }
     }
 }

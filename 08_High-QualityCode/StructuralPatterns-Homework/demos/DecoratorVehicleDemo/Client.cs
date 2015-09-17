@@ -22,6 +22,7 @@
             // Adding all options
             var superCar = new V8EngineDecorator(new NavigationSystemDecorator(updatedCar));
             superCar.DisplayInfo();
+            superCar.DriveOnTrack();
             LineSeparator();
         }
 
