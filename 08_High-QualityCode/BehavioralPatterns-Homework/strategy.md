@@ -18,7 +18,6 @@
 ![alt text](diagrams/strategy.png)
 
 ###### public interface ICalculateCost - т.нар Strategy клас. Задава необходимите входни параметри и очаквания тип данни които да получим като резултат, имплементацията е оставена на класовете които наследяват интерфейса.
-An interface which will be implemented by our different strategies, based on their types.
 ~~~c#
 public interface ICalculateCost
     {
