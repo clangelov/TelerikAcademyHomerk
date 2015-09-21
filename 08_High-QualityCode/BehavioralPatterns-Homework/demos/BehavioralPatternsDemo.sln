@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChainOfResponsibilityLoanDe
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TemplateMethodHirePeopleDemo", "TemplateMethodHirePeopleDemo\TemplateMethodHirePeopleDemo.csproj", "{57CD34DE-C7A0-4786-B558-265C8B29C2C7}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StrategyPatternTransportCostDemo", "StrategyPatternTransportCostDemo\StrategyPatternTransportCostDemo.csproj", "{EEF79540-4358-452A-A148-201CBF1CDD88}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{57CD34DE-C7A0-4786-B558-265C8B29C2C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{57CD34DE-C7A0-4786-B558-265C8B29C2C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{57CD34DE-C7A0-4786-B558-265C8B29C2C7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EEF79540-4358-452A-A148-201CBF1CDD88}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EEF79540-4358-452A-A148-201CBF1CDD88}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EEF79540-4358-452A-A148-201CBF1CDD88}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EEF79540-4358-452A-A148-201CBF1CDD88}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
