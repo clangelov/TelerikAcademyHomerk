@@ -96,4 +96,4 @@ public class Client
     }
 ~~~
 
-###### Демо: [Link to GitHub]()
+###### Демо: [Link to GitHub](https://github.com/clangelov/TelerikAcademyHomework/tree/master/08_High-QualityCode/BehavioralPatterns-Homework/demos/ChainOfResponsibilityLoanDemo)
