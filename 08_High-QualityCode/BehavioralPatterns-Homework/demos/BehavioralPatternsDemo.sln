@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TemplateMethodHirePeopleDem
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StrategyPatternTransportCostDemo", "StrategyPatternTransportCostDemo\StrategyPatternTransportCostDemo.csproj", "{EEF79540-4358-452A-A148-201CBF1CDD88}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MediatorAirplanesDemo", "MediatorAirplanesDemo\MediatorAirplanesDemo.csproj", "{F85ADA80-E90B-43D1-A7BC-DE0D5B3C3292}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{EEF79540-4358-452A-A148-201CBF1CDD88}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EEF79540-4358-452A-A148-201CBF1CDD88}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EEF79540-4358-452A-A148-201CBF1CDD88}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F85ADA80-E90B-43D1-A7BC-DE0D5B3C3292}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F85ADA80-E90B-43D1-A7BC-DE0D5B3C3292}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F85ADA80-E90B-43D1-A7BC-DE0D5B3C3292}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F85ADA80-E90B-43D1-A7BC-DE0D5B3C3292}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
