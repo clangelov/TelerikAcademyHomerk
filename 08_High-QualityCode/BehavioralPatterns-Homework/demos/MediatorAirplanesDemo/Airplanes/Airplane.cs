@@ -4,30 +4,17 @@
 
     public abstract class Airplane
     {
-        private IAirTrafficControl airTrafficControl;
+        private readonly IAirTrafficControl airTrafficControl;
         private int currentAltitude;
 
         protected Airplane(string callSign, IAirTrafficControl airTrafficControl)
         {
             this.CallSign = callSign;
-            this.AirTrafficControl = airTrafficControl;      
+            this.airTrafficControl = airTrafficControl;      
             airTrafficControl.RegisterAircraftUnderGuidance(this);
         }
  
         public string CallSign { get; private set; }
-
-        public IAirTrafficControl AirTrafficControl
-        {
-            get
-            {
-                return this.airTrafficControl;
-            }
-
-            set
-            {
-                this.airTrafficControl = value;
-            }
-        }
  
         public int CurrentAltitude
         {
