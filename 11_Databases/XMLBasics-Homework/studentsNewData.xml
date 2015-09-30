@@ -1,7 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="students.xsl"?>
 <studetns>
-  <student>
+  <student xmlns="school-ninjas:students">
     <name>John Smalling</name>
     <gender>Male</gender>
     <birthdate>1993-02-21</birthdate>
@@ -27,8 +26,13 @@
         <score>4</score>
       </exam>
     </exams>
+    <endorsment>
+      <enrolleddate>2014-01-10</enrolleddate>
+      <testscore>90</testscore>
+      <remarks>Very bright student</remarks>
+    </endorsment>
   </student>
-  <student>
+  <student xmlns="school-ninjas:students">
     <name>Alice Peterson</name>
     <gender>Female</gender>
     <birthdate>1993-05-17</birthdate>
@@ -54,8 +58,13 @@
         <score>5</score>
       </exam>
     </exams>
+    <endorsment>
+      <enrolleddate>2014-01-10</enrolleddate>
+      <testscore>85</testscore>
+      <remarks>Smart one</remarks>
+    </endorsment>
   </student>
-  <student>
+  <student xmlns="school-ninjas:students">
     <name>Mi Jackson</name>
     <gender>Male</gender>
     <birthdate>1992-12-11</birthdate>
@@ -81,5 +90,10 @@
         <score>2</score>
       </exam>
     </exams>
+    <endorsment>
+      <enrolleddate>2014-01-10</enrolleddate>
+      <testscore>97</testscore>
+      <remarks>The choosen one</remarks>
+    </endorsment>
   </student>
 </studetns>

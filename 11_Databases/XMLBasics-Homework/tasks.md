@@ -33,8 +33,12 @@ see file studentsAndNamespace.xml
 * Add new elements in the schema: information for enrollment (date and exam score) and teacher's endorsements.
 
 see file studentsSchema.xsd
+the file is based on studentsNewData.xml
 - - - -
 ## Task 07. 
 ### Write an XSL stylesheet to visualize the students as HTML.
 * Test it in your favourite browser.
 
+works fine in IE 11
+open the file students.xml
+the stylesheet is students.xsl
