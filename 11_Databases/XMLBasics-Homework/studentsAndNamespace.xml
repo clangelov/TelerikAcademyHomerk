@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<studetns>
+  <student xmlns="school-ninjas:students">
+    <name>John Smalling</name>
+    <gender>Male</gender>
+    <birthdate>1993-02-21</birthdate>
+    <phone>+188845654568</phone>
+    <email>john@yahoo.com</email>
+    <course>JavaScript Applications</course>
+    <speciality>Computer Science</speciality>
+    <facultynumber>123555</facultynumber>
+    <exams>
+      <exam>
+        <name>jQuery</name>
+        <tutor>Master Mike</tutor>
+        <score>3</score>
+      </exam>
+      <exam>
+        <name>Angular</name>
+        <tutor>Master Andy</tutor>
+        <score>4</score>
+      </exam>
+      <exam>
+        <name>Handlebars</name>
+        <tutor>Master Lowton</tutor>
+        <score>4</score>
+      </exam>
+    </exams>
+  </student>
+  <student xmlns="school-ninjas:students">
+    <name>Alice Peterson</name>
+    <gender>Female</gender>
+    <birthdate>1993-05-17</birthdate>
+    <phone>+188898154568</phone>
+    <email>aliceNice@yahoo.com</email>
+    <course>JavaScript Applications</course>
+    <speciality>Computer Science</speciality>
+    <facultynumber>724555</facultynumber>
+    <exams>
+      <exam>
+        <name>jQuery</name>
+        <tutor>Master Mike</tutor>
+        <score>5</score>
+      </exam>
+      <exam>
+        <name>Angular</name>
+        <tutor>Master Andy</tutor>
+        <score>5</score>
+      </exam>
+      <exam>
+        <name>Handlebars</name>
+        <tutor>Master Lowton</tutor>
+        <score>5</score>
+      </exam>
+    </exams>
+  </student>
+  <student xmlns="school-ninjas:students">
+    <name>Mi Jackson</name>
+    <gender>Male</gender>
+    <birthdate>1992-12-11</birthdate>
+    <phone>+188898154569</phone>
+    <email>miiiie@yahoo.co.uk</email>
+    <course>JavaScript Applications</course>
+    <speciality>Computer Science</speciality>
+    <facultynumber>722205</facultynumber>
+    <exams>
+      <exam>
+        <name>jQuery</name>
+        <tutor>Master Mike</tutor>
+        <score>4</score>
+      </exam>
+      <exam>
+        <name>Angular</name>
+        <tutor>Master Andy</tutor>
+        <score>2</score>
+      </exam>
+      <exam>
+        <name>Handlebars</name>
+        <tutor>Master Lowton</tutor>
+        <score>2</score>
+      </exam>
+    </exams>
+  </student>
+</studetns>
