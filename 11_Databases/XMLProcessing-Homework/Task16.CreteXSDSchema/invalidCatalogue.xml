@@ -1,0 +1,438 @@
+<?xml version="1.0" encoding="utf-8"?>
+<catalogue>
+  <album>
+    <name>Album #1</name>
+    <artist>Rudimental</artist>
+    <releasedin>2005</releasedin>
+    <producer>Scott Storch</producer>
+    <price>21,07</price>
+    <songs>
+      <song>
+        <title>All eyez on me #1</title>
+        <duration>4,59</duration>
+      </song>
+      <song>
+        <title>No type #2</title>
+        <duration>3,55</duration>
+      </song>
+      <song>
+        <title>Man don't care #3</title>
+        <duration>3,03</duration>
+      </song>
+      <song>
+        <title>All eyez on me #4</title>
+        <duration>3,11</duration>
+      </song>
+      <song>
+        <title>No Sleeep #5</title>
+        <duration>4,06</duration>
+      </song>
+    </songs>
+  </album>
+  <album>
+    <name>Album #2</name>
+    <artist>Tinie Tempah</artist>
+    <releasedin>2007</releasedin>
+    <producer>Scott Storch</producer>
+    <price>15,19</price>
+    <songs>
+      <song>
+        <title>Man don't care #1</title>
+        <duration>3,08</duration>
+      </song>
+      <song>
+        <title>No Sleeep #2</title>
+        <duration>3,44</duration>
+      </song>
+      <song>
+        <title>Man don't care #3</title>
+        <duration>4,17</duration>
+      </song>
+      <song>
+        <title>No Sleeep #4</title>
+        <duration>3,24</duration>
+      </song>
+      <song>
+        <title>No Sleeep #5</title>
+        <duration>3,34</duration>
+      </song>
+    </songs>
+  </album>
+  <album>
+    <name>Album #3</name>
+    <artist>Jess Glyne</artist>
+    <releasedin>2010</releasedin>
+    <producer>DJ Shadow</producer>
+    <price>20,95</price>
+    <songs>
+      <song>
+        <title>Man don't care #1</title>
+        <duration>3,71</duration>
+      </song>
+      <song>
+        <title>I am so cool #2</title>
+        <duration>3,08</duration>
+      </song>
+      <song>
+        <title>No Sleeep #3</title>
+        <duration>4,93</duration>
+      </song>
+      <song>
+        <title>All eyez on me #4</title>
+        <duration>3,88</duration>
+      </song>
+      <song>
+        <title>No Sleeep #5</title>
+        <duration>4,47</duration>
+      </song>
+    </songs>
+  </album>
+  <album>
+    <name>Album #4</name>
+    <artist>Jess Glyne</artist>
+    <releasedin>2011</releasedin>
+    <producer>DJ Shadow</producer>
+    <price>15,39</price>
+    <songs>
+      <song>
+        <title>Man don't care #1</title>
+        <duration>4,83</duration>
+      </song>
+      <song>
+        <title>No type #2</title>
+        <duration>3,15</duration>
+      </song>
+      <song>
+        <title>All eyez on me #3</title>
+        <duration>3,57</duration>
+      </song>
+      <song>
+        <title>I am so cool #4</title>
+        <duration>3,57</duration>
+      </song>
+      <song>
+        <title>All eyez on me #5</title>
+        <duration>3,53</duration>
+      </song>
+    </songs>
+  </album>
+  <album>
+    <name>Album #5</name>
+    <artist>Skepta</artist>
+    <releasedin>2014</releasedin>
+    <producer>Scott Storch</producer>
+    <price>15,48</price>
+    <songs>
+      <song>
+        <title>I am so cool #1</title>
+        <duration>4,38</duration>
+      </song>
+      <song>
+        <title>All eyez on me #2</title>
+        <duration>4,32</duration>
+      </song>
+      <song>
+        <title>No type #3</title>
+        <duration>4,13</duration>
+      </song>
+      <song>
+        <title>I am so cool #4</title>
+        <duration>4,06</duration>
+      </song>
+      <song>
+        <title>I am so cool #5</title>
+        <duration>4,35</duration>
+      </song>
+    </songs>
+  </album>
+  <album>
+    <name>Album #6</name>
+    <artist>Rihanna</artist>
+    <releasedin>2010</releasedin>
+    <producer>Scott Storch</producer>
+    <price>16,30</price>
+    <songs>
+      <song>
+        <title>I am so cool #1</title>
+        <duration>3,86</duration>
+      </song>
+      <song>
+        <title>No type #2</title>
+        <duration>4,33</duration>
+      </song>
+      <song>
+        <title>No type #3</title>
+        <duration>4,13</duration>
+      </song>
+      <song>
+        <title>Man don't care #4</title>
+        <duration>4,62</duration>
+      </song>
+      <song>
+        <title>No type #5</title>
+        <duration>4,26</duration>
+      </song>
+    </songs>
+  </album>
+  <album>
+    <name>Album #7</name>
+    <artist>Rihanna</artist>
+    <releasedin>2008</releasedin>
+    <producer>DJ Shadow</producer>
+    <price>24,20</price>
+    <songs>
+      <song>
+        <title>Man don't care #1</title>
+        <duration>4,53</duration>
+      </song>
+      <song>
+        <title>Man don't care #2</title>
+        <duration>3,98</duration>
+      </song>
+      <song>
+        <title>No type #3</title>
+        <duration>4,64</duration>
+      </song>
+      <song>
+        <title>Man don't care #4</title>
+        <duration>3,62</duration>
+      </song>
+      <song>
+        <title>No type #5</title>
+        <duration>3,07</duration>
+      </song>
+    </songs>
+  </album>
+  <album>
+    <name>Album #8</name>
+    <artist>Jess Glyne</artist>
+    <releasedin>2007</releasedin>
+    <producer>DJ Hi Tek</producer>
+    <price>23,12</price>
+    <songs>
+      <song>
+        <title>I am so cool #1</title>
+        <duration>3,71</duration>
+      </song>
+      <song>
+        <title>All eyez on me #2</title>
+        <duration>3,48</duration>
+      </song>
+      <song>
+        <title>No type #3</title>
+        <duration>3,72</duration>
+      </song>
+      <song>
+        <title>No Sleeep #4</title>
+        <duration>3,11</duration>
+      </song>
+      <song>
+        <title>All eyez on me #5</title>
+        <duration>3,48</duration>
+      </song>
+    </songs>
+  </album>
+  <album>
+    <name>Album #9</name>
+    <artist>Rudimental</artist>
+    <releasedin>2007</releasedin>
+    <producer>DJ Hi Tek</producer>
+    <price>17,90</price>
+    <songs>
+      <song>
+        <title>I am so cool #1</title>
+        <duration>4,87</duration>
+      </song>
+      <song>
+        <title>All eyez on me #2</title>
+        <duration>4,77</duration>
+      </song>
+      <song>
+        <title>No Sleeep #3</title>
+        <duration>4,94</duration>
+      </song>
+      <song>
+        <title>I am so cool #4</title>
+        <duration>4,46</duration>
+      </song>
+      <song>
+        <title>Man don't care #5</title>
+        <duration>4,98</duration>
+      </song>
+    </songs>
+  </album>
+  <album>
+    <name>Album #10</name>
+    <artist>Jess Glyne</artist>
+    <releasedin>2012</releasedin>
+    <producer>Scott Storch</producer>
+    <price>21,28</price>
+    <songs>
+      <song>
+        <title>I am so cool #1</title>
+        <duration>3,98</duration>
+      </song>
+      <song>
+        <title>No type #2</title>
+        <duration>3,80</duration>
+      </song>
+      <song>
+        <title>No type #3</title>
+        <duration>4,98</duration>
+      </song>
+      <song>
+        <title>Man don't care #4</title>
+        <duration>4,57</duration>
+      </song>
+      <song>
+        <title>Man don't care #5</title>
+        <duration>4,97</duration>
+      </song>
+    </songs>
+  </album>
+  <album>
+    <name>Album #11</name>
+    <artist>Tinie Tempah</artist>
+    <releasedin>2013</releasedin>
+    <producer>Scott Storch</producer>
+    <price>17,15</price>
+    <songs>
+      <song>
+        <title>No Sleeep #1</title>
+        <duration>4,79</duration>
+      </song>
+      <song>
+        <title>Man don't care #2</title>
+        <duration>4,64</duration>
+      </song>
+      <song>
+        <title>No Sleeep #3</title>
+        <duration>3,23</duration>
+      </song>
+      <song>
+        <title>I am so cool #4</title>
+        <duration>3,46</duration>
+      </song>
+      <song>
+        <title>All eyez on me #5</title>
+        <duration>3,69</duration>
+      </song>
+    </songs>
+  </album>
+  <album>
+    <name>Album #12</name>
+    <artist>Rudimental</artist>
+    <releasedin>2011</releasedin>
+    <producer>DJ Shadow</producer>
+    <price>17,90</price>
+    <songs>
+      <song>
+        <title>No type #1</title>
+        <duration>4,20</duration>
+      </song>
+      <song>
+        <title>Man don't care #2</title>
+        <duration>3,43</duration>
+      </song>
+      <song>
+        <title>No Sleeep #3</title>
+        <duration>4,03</duration>
+      </song>
+      <song>
+        <title>All eyez on me #4</title>
+        <duration>3,50</duration>
+      </song>
+      <song>
+        <title>All eyez on me #5</title>
+        <duration>3,87</duration>
+      </song>
+    </songs>
+  </album>
+  <album>
+    <name>Album #13</name>
+    <artist>Skepta</artist>
+    <releasedin>2012</releasedin>
+    <producer>DJ Shadow</producer>
+    <price>21,71</price>
+    <songs>
+      <song>
+        <title>All eyez on me #1</title>
+        <duration>3,90</duration>
+      </song>
+      <song>
+        <title>All eyez on me #2</title>
+        <duration>4,55</duration>
+      </song>
+      <song>
+        <title>No Sleeep #3</title>
+        <duration>4,69</duration>
+      </song>
+      <song>
+        <title>No type #4</title>
+        <duration>4,30</duration>
+      </song>
+      <song>
+        <title>I am so cool #5</title>
+        <duration>3,40</duration>
+      </song>
+    </songs>
+  </album>
+  <album>
+    <name>Album #14</name>
+    <artist>Skepta</artist>
+    <releasedin>2005</releasedin>
+    <producer>DJ Shadow</producer>
+    <price>16,12</price>
+    <songs>
+      <song>
+        <title>I am so cool #1</title>
+        <duration>3,17</duration>
+      </song>
+      <song>
+        <title>No type #2</title>
+        <duration>3,03</duration>
+      </song>
+      <song>
+        <title>All eyez on me #3</title>
+        <duration>4,41</duration>
+      </song>
+      <song>
+        <title>No Sleeep #4</title>
+        <duration>3,87</duration>
+      </song>
+      <song>
+        <title>Man don't care #5</title>
+        <duration>4,73</duration>
+      </song>
+    </songs>
+  </album>
+  <album>
+    <name>Album #15</name>
+    <artist>Tinie Tempah</artist>
+    <releasedin>2012</releasedin>
+    <producer>Scott Storch</producer>
+    <price>21,35</price>
+    <songs>
+      <song>
+        <title>All eyez on me #1</title>
+        <duration>3,43</duration>
+      </song>
+      <song>
+        <title>No type #2</title>
+        <duration>3,97</duration>
+      </song>
+      <song>
+        <title>No type #3</title>
+        <duration>4,99</duration>
+      </song>
+      <song>
+        <title>I am so cool #4</title>
+        <duration>3,29</duration>
+      </song>
+      <song>
+        <title>I am so cool #5</title>
+        <duration>3,10</duration>
+      </song>
+    </songs>
+  </album>
+</catalogue>

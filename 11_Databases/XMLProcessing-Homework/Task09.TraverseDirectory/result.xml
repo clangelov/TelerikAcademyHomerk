@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<directory>
+	<dir path="../../bin">
+		<dir path="../../bin\Debug">
+			<file name="Task09.TraverseDirectory.exe" />
+			<file name="Task09.TraverseDirectory.exe.config" />
+			<file name="Task09.TraverseDirectory.pdb" />
+			<file name="Task09.TraverseDirectory.vshost.exe" />
+			<file name="Task09.TraverseDirectory.vshost.exe.config" />
+		</dir>
+		<dir path="../../bin\Release" />
+	</dir>
+	<dir path="../../obj">
+		<dir path="../../obj\Debug">
+			<dir path="../../obj\Debug\TempPE" />
+			<file name="DesignTimeResolveAssemblyReferencesInput.cache" />
+			<file name="Task09.TraverseDirectory.csproj.FileListAbsolute.txt" />
+			<file name="Task09.TraverseDirectory.csprojResolveAssemblyReference.cache" />
+			<file name="Task09.TraverseDirectory.exe" />
+			<file name="Task09.TraverseDirectory.pdb" />
+			<file name="TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" />
+			<file name="TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" />
+			<file name="TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" />
+		</dir>
+	</dir>
+	<dir path="../../Properties">
+		<file name="AssemblyInfo.cs" />
+	</dir>
+	<file name="App.config" />
+	<file name="result.xml" />
+	<file name="Task09.TraverseDirectory.csproj" />
+	<file name="Traverse.cs" />
+</directory>

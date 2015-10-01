@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<persons>
+  <person>
+    <name>James Butt</name>
+    <phone>504-845-1427</phone>
+    <addres>6649 N Blue Gum Str</addres>
+  </person>
+  <person>
+    <name>Josephine Darakjy</name>
+    <phone>810-374-9840</phone>
+    <addres>4 B Blue Ridge Blvd</addres>
+  </person>
+  <person>
+    <name>Anie Venere</name>
+    <phone>856-264-4130</phone>
+    <addres>8 W Cerritos Ave #54</addres>
+  </person>
+  <person>
+    <name>Lenna Paprocki</name>
+    <phone>907-921-2010</phone>
+    <addres>639 Main Str</addres>
+  </person>
+  <person>
+    <name>Donette Foller</name>
+    <phone>907-385-4412</phone>
+    <addres>34 Center Str</addres>
+  </person>
+  <person>
+    <name>Simona Morasca</name>
+    <phone>419-800-6759</phone>
+    <addres>3 Mcauley Blvd</addres>
+  </person>
+</persons>

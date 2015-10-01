@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<albums>
+	<album>
+		<name>Album #1</name>
+		<artist>Rudimental</artist>
+	</album>
+	<album>
+		<name>Album #2</name>
+		<artist>Tinie Tempah</artist>
+	</album>
+	<album>
+		<name>Album #3</name>
+		<artist>Jess Glyne</artist>
+	</album>
+	<album>
+		<name>Album #4</name>
+		<artist>Jess Glyne</artist>
+	</album>
+	<album>
+		<name>Album #5</name>
+		<artist>Skepta</artist>
+	</album>
+	<album>
+		<name>Album #6</name>
+		<artist>Rihanna</artist>
+	</album>
+	<album>
+		<name>Album #7</name>
+		<artist>Rihanna</artist>
+	</album>
+	<album>
+		<name>Album #8</name>
+		<artist>Jess Glyne</artist>
+	</album>
+	<album>
+		<name>Album #9</name>
+		<artist>Rudimental</artist>
+	</album>
+	<album>
+		<name>Album #10</name>
+		<artist>Jess Glyne</artist>
+	</album>
+	<album>
+		<name>Album #11</name>
+		<artist>Tinie Tempah</artist>
+	</album>
+	<album>
+		<name>Album #12</name>
+		<artist>Rudimental</artist>
+	</album>
+	<album>
+		<name>Album #13</name>
+		<artist>Skepta</artist>
+	</album>
+	<album>
+		<name>Album #14</name>
+		<artist>Skepta</artist>
+	</album>
+	<album>
+		<name>Album #15</name>
+		<artist>Tinie Tempah</artist>
+	</album>
+</albums>
