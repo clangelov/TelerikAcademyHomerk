@@ -1,0 +1,17 @@
+﻿.container {
+            border: 2px solid black;
+            border-radius: 10px;
+            padding: 10px;
+            width: 560px;
+            float: left;
+            text-align: center;
+            background-color: lavender;
+            margin: 15px;
+        }
+        .container p {
+            font-size: 1.25em;
+        }
+        .container iframe {
+            width: 560px;
+            height: 315px;            
+        }
