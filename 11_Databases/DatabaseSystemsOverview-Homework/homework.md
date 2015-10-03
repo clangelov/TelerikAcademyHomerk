@@ -52,12 +52,20 @@ In terms of the relational model of databases, a table can be considered a conve
 ### Explain the difference between a primary and a foreign key.
 
 In SQL Server, there are two keys - primary key and foreign key which seems identical, but actually both are different in features and behaviours.
-| Primary Key   | Foreign Key   | 
-| ------------- |:-------------:| 
-| Primary key uniquely identify a record in the table. | Foreign key is a field in the table that is primary key in another table. |
-| Primary Key can't accept null values. | Foreign key can accept multiple null value. |  
-| By default, Primary key is clustered index and data in the database table is physically organized in the sequence of clustered index. | Foreign key do not automatically create an index, clustered or non-clustered. You can manually create an index on foreign key. |
-| We can have only one Primary key in a table. | We can have more than one foreign key in a table.  |
+
+__Primary Key__
+
+* Primary key uniquely identify a record in the table.
+* Primary Key can't accept null values. 
+* By default, Primary key is clustered index and data in the database table is physically organized in the sequence of clustered index. 
+* We can have only one Primary key in a table. 
+
+__Foreign Key__
+
+* Foreign key is a field in the table that is primary key in another table.
+* Foreign key can accept multiple null value.
+* Foreign key do not automatically create an index, clustered or non-clustered. You can manually create an index on foreign key.
+* We can have more than one foreign key in a table.
 
 - - - -
 
