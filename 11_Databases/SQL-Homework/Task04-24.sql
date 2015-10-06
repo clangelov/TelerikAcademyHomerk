@@ -101,11 +101,11 @@ SELECT e.FirstName + ' ' + e.LastName AS Employee, ea.AddressText AS [Living adr
 	ORDER BY m.FirstName 
 
 /* Task 22 Write a SQL query to find all departments and all town names as a single list. Use UNION.*/
-SELECT Name 
-	FROM Departments
+SELECT d.Name AS [Town/Department]
+	FROM Departments d
 	UNION 
-	SELECT Name
-	FROM Towns
+	SELECT t.Name AS [Town/Department]
+	FROM Towns t
 
 /*Task 23 Write a SQL query to find all the employees and the manager for each of them along with the employees 
 that do not have manager. Use right outer join. Rewrite the query to use left outer join.*/
