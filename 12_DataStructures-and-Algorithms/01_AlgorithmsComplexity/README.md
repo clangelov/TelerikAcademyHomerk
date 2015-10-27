@@ -5,7 +5,7 @@
 Big O gives the upperbound - the worst possible execution time of an algorithm. And Ω is the converse of O, ie, the lowest estimate. Θ is somewhere inbetween. 
 More info: [Link to an article](https://www.quora.com/What-are-some-easy-ways-to-understand-and-calculate-the-time-complexity-of-algorithms)
 
-1. What is the expected running time of the following C# code? Explain why.
+__Task 1.__ What is the expected running time of the following C# code? Explain why.
   - Assume the array's size is `n`.
 
 ~~~c#
@@ -30,7 +30,7 @@ The complexity of the code would be 0(n^2) (quadratic time).
 
 - - - -
 
-2. What is the expected running time of the following C# code?
+__Task 2.__ What is the expected running time of the following C# code?
   - Explain why.
   - Assume the input matrix has size of n * m.
 
@@ -52,7 +52,7 @@ The complexity of the code would be O(n*m) (quadratic time).
 
 - - - -
 
-3. * What is the expected running time of the following C# code?
+__Task 3.*__ What is the expected running time of the following C# code?
   - Explain why.
   - Assume the input matrix has size of n * m.
 
@@ -62,8 +62,8 @@ long CalcSum(int[,] matrix, int row)
     long sum = 0;
     for (int col = 0; col < matrix.GetLength(0); col++) // The operation will perform m times
         sum += matrix[row, col];
-    if (row + 1 < matrix.GetLength(1))  // The operation will perform n times
-        sum += CalcSum(matrix, row + 1);
+    if (row + 1 < matrix.GetLength(1)) 
+        sum += CalcSum(matrix, row + 1);  // The operation will perform n times
     return sum;
 }
 
