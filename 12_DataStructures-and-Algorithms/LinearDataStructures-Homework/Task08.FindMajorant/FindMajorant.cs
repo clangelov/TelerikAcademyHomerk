@@ -20,7 +20,7 @@ namespace Task08.FindMajorant
                 .Where(gr => gr.Count() > listOfNumbers.Count / 2)
                 .FirstOrDefault();
 
-            Console.WriteLine("The mahorant in the array {0}", result == null ? "does not exist" : "is " + result.Key);
+            Console.WriteLine("The majorant in the array {0}", result == null ? "does not exist" : "is " + result.Key);
         }
     }
 }

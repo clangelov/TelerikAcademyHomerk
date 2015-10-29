@@ -13,7 +13,7 @@ namespace Task07.FindOccurrences
             List<int> listOfNumbers = Console.ReadLine()
                .Split(new char[] { ' ', ',' }, StringSplitOptions.RemoveEmptyEntries)
                .Select(x => int.Parse(x))
-               .Where(x =>  0 < x && x < 1001)
+               .Where(x => 0 < x && x < 1001)
                .ToList();
 
             var result = new Dictionary<int, int>();

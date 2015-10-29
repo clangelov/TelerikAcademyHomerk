@@ -9,7 +9,6 @@ namespace Task11.ImplementLinkedList
     {
         public static void Main()
         {
-
             var someLinkedList = new MyLinkedList<int>();
 
             someLinkedList.Add(50);

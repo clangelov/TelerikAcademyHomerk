@@ -16,19 +16,26 @@
             this.tailElement = null;
         }
 
+        public MyListItem<T> FirstElement
+        {
+            get { return this.firstElement; }
+            set { this.firstElement = value; }
+        }
+
         public void Add(T value)
         {
-            if (firstElement == null)
+            if (this.firstElement == null)
             {
-                firstElement = new MyListItem<T>(value);
-                tailElement = firstElement;
+                this.firstElement = new MyListItem<T>(value);
+                this.tailElement = this.firstElement;
             }
             else
             {
-                var newListItem = new MyListItem<T>(value, tailElement);
-                tailElement = newListItem;
+                var newListItem = new MyListItem<T>(value, this.tailElement);
+                this.tailElement = newListItem;
             }
-            count++;
+
+            this.count++;
         }
 
         public int Count()
@@ -54,12 +61,6 @@
         IEnumerator IEnumerable.GetEnumerator()
         {
             return this.GetEnumerator();
-        }
-
-        public MyListItem<T> FirstElement
-        {
-            get { return this.firstElement; }
-            set { this.firstElement = value; }
-        }
+        }        
     }
 }

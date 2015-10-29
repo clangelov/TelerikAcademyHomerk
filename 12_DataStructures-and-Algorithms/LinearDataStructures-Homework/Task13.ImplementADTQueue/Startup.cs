@@ -16,10 +16,14 @@ namespace Task13.ImplementADTQueue
 
             Console.WriteLine("You have {0} elements in the queue", testQueue.Count);
 
-            foreach (var item in testQueue)
+            int size = testQueue.Count;
+            for (int i = 0; i < size; i++)
             {
-                Console.WriteLine("Removing the element at the begining {0}", item);
+                var firstElemnet = testQueue.Dequeue();
+                Console.WriteLine("Removing the element at the begining {0}", firstElemnet);
             }
+
+            Console.WriteLine("You have {0} elements in the queue", testQueue.Count);
         }
     }
 }

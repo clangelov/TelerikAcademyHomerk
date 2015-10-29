@@ -27,7 +27,7 @@
         {
             if (this.currentSize == this.elements.Length)
             {
-                AutoGrow();
+                this.AutoGrow();
             }
 
             this.elements[this.currentSize] = value;
@@ -41,7 +41,7 @@
                 throw new ArgumentException("There are no elements left in the stack to be removed");
             }
 
-            var elemetToReturn = this.elements[this.currentSize-1];
+            var elemetToReturn = this.elements[this.currentSize - 1];
             this.currentSize--;
             return elemetToReturn;
         }
@@ -53,7 +53,7 @@
                 throw new ArgumentException("The stack is empty");
             }
 
-            return this.elements[this.currentSize-1];
+            return this.elements[this.currentSize - 1];
         }
         
         public void Clear()

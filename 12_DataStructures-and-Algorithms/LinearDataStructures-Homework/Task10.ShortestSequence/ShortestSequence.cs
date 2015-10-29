@@ -7,6 +7,7 @@ namespace Task10.ShortestSequence
 {
     using System;
     using System.Collections.Generic;
+    using System.Linq;
 
     public class ShortestSequence
     {
@@ -15,40 +16,37 @@ namespace Task10.ShortestSequence
             Queue<int> operations = new Queue<int>();
 
             int startNumber = 5;
-            int endNumber = 16;
+            int endNumber = 23;
 
-            int newTarget = endNumber;
-            int multyplierCounter = 0;
-
-            operations.Enqueue(startNumber);
-
-            while (newTarget / 2 >= startNumber)
+            while (startNumber <= endNumber)
             {
-                newTarget /= 2;
-                multyplierCounter++;
-            }
+                operations.Enqueue(endNumber);
 
-            while (startNumber < newTarget)
-            {
-                if (startNumber + 2 < newTarget)
+                if (endNumber / 2 >= startNumber)
                 {
-                    startNumber += 2;
-                    operations.Enqueue(startNumber);
+                    if (endNumber % 2 == 0)
+                    {
+                        endNumber /= 2;
+                    }
+                    else
+                    {
+                        endNumber--;
+                    }
                 }
-                else if (startNumber < newTarget)
+                else
                 {
-                    startNumber++;
-                    operations.Enqueue(startNumber);
+                    if (endNumber - 2 >= startNumber)
+                    {
+                        endNumber -= 2;
+                    }
+                    else
+                    {
+                        endNumber--;
+                    }
                 }
             }
 
-            for (int i = 0; i < multyplierCounter; i++)
-            {
-                startNumber *= 2;
-                operations.Enqueue(startNumber);
-            }
-
-            Console.WriteLine(string.Join(" -> ", operations));
+            Console.WriteLine(string.Join(" -> ", operations.Reverse()));
         }
     }
 }
