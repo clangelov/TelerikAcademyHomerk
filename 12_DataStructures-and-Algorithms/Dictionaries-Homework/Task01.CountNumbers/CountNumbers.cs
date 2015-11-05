@@ -8,17 +8,17 @@
     {
         public static void Main()
         {
-            // 3, 4, 4, -2.5, 3, 3, 4, 3, -2.5
-            int[] listOfNumbers = Console.ReadLine()
+            // 3, 4, 4, -2,5, 3, 3, 4, 3, -2,5
+            double[] listOfNumbers = Console.ReadLine()
                .Split(new char[] { ' ', ',' }, StringSplitOptions.RemoveEmptyEntries)
-               .Select(x => int.Parse(x))
+               .Select(x => double.Parse(x))
                .ToArray();
 
-            var result = new Dictionary<int, int>();
+            var result = new Dictionary<double, int>();
 
             for (int i = 0; i < listOfNumbers.Length; i++)
             {
-                int numberToAdd = listOfNumbers[i];
+                double numberToAdd = listOfNumbers[i];
                 if (!result.ContainsKey(numberToAdd))
                 {
                     result.Add(numberToAdd, 1);

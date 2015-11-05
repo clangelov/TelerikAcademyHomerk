@@ -1,12 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Task06.PhoneBookSearch
+﻿namespace Task06.PhoneBookSearch
 {
+    using System;
+    using System.Collections.Generic;
+    using System.IO;
+
     public class Startup
     {
         private static Dictionary<string, List<string>> phonebook = new Dictionary<string, List<string>>();
@@ -35,6 +32,7 @@ namespace Task06.PhoneBookSearch
                         AddToPhoneBook(item, line);
                         AddToPhoneBook(item + " from " + town, line);
                     }
+
                     line = reader.ReadLine();
                 }
             }
@@ -50,22 +48,23 @@ namespace Task06.PhoneBookSearch
                 entries = new List<string>();
                 phonebook.Add(name, entries);
             }
+
             entries.Add(line);
         }
 
-        static void Find(string name)
+        private static void Find(string name)
         {
             string nameToSearch = name.Trim().ToLower();
             PrintAllMatches(name);
         }
 
-        static void Find(string name, string town)
+        private static void Find(string name, string town)
         {
             string nameAndTown = name.ToLower() + " from " + town.ToLower();
             PrintAllMatches(nameAndTown);
         }
 
-        static void PrintAllMatches(string key)
+        private static void PrintAllMatches(string key)
         {
             List<string> allMatches;
             if (phonebook.TryGetValue(key, out allMatches))
@@ -79,6 +78,7 @@ namespace Task06.PhoneBookSearch
             {
                 Console.WriteLine("Not found!");
             }
+
             Console.WriteLine();
         }
     }
