@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{BF5E2D67-ABCD-43AB-A6B9-EC2FDB78488A}</ProjectGuid>
+    <ProjectGuid>{85EBAF75-4D4C-4C85-A071-42BCAE0BCC55}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Task05.StringCountConsoleClient</RootNamespace>
@@ -44,44 +44,52 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Service References\StringOperation\Reference.cs">
+    <Compile Include="Service References\ServiceReferenceString\Reference.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Compile>
     <Compile Include="Startup.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="StringCounter.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-    <None Include="Service References\StringOperation\service.wsdl" />
-    <None Include="Service References\StringOperation\service.xsd">
+    <None Include="Service References\ServiceReferenceString\StringCounter.wsdl" />
+    <None Include="Service References\ServiceReferenceString\StringCounterService.xsd">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Service References\StringOperation\service1.xsd">
+    <None Include="Service References\ServiceReferenceString\StringCounterService1.xsd">
       <SubType>Designer</SubType>
     </None>
-  </ItemGroup>
-  <ItemGroup>
-    <WCFMetadata Include="Service References\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Task03.StringCountService\Task03.StringCountService.csproj">
       <Project>{576c7eee-2409-4589-9f92-e14ba559b2e8}</Project>
       <Name>Task03.StringCountService</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Task04.StringCountIISHost\Task04.StringCountIISHost.csproj">
+      <Project>{5f80d0cb-6d4d-440f-8be5-fb51a3ad2f67}</Project>
+      <Name>Task04.StringCountIISHost</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <WCFMetadataStorage Include="Service References\StringOperation\" />
+    <WCFMetadata Include="Service References\" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Service References\StringOperation\configuration91.svcinfo" />
+    <WCFMetadataStorage Include="Service References\ServiceReferenceString\" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Service References\StringOperation\configuration.svcinfo" />
+    <None Include="Service References\ServiceReferenceString\StringCounterService.disco" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Service References\StringOperation\Reference.svcmap">
+    <None Include="Service References\ServiceReferenceString\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ServiceReferenceString\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ServiceReferenceString\Reference.svcmap">
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>

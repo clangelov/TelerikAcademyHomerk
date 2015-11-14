@@ -8,11 +8,11 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Task05.StringCountConsoleClient.StringOperation {
+namespace Task05.StringCountConsoleClient.ServiceReferenceString {
     
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ServiceModel.ServiceContractAttribute(ConfigurationName="StringOperation.IStringCounter")]
+    [System.ServiceModel.ServiceContractAttribute(ConfigurationName="ServiceReferenceString.IStringCounter")]
     public interface IStringCounter {
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IStringCounter/FindWordOccurance", ReplyAction="http://tempuri.org/IStringCounter/FindWordOccuranceResponse")]
@@ -23,12 +23,12 @@ namespace Task05.StringCountConsoleClient.StringOperation {
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    public interface IStringCounterChannel : Task05.StringCountConsoleClient.StringOperation.IStringCounter, System.ServiceModel.IClientChannel {
+    public interface IStringCounterChannel : Task05.StringCountConsoleClient.ServiceReferenceString.IStringCounter, System.ServiceModel.IClientChannel {
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    public partial class StringCounterClient : System.ServiceModel.ClientBase<Task05.StringCountConsoleClient.StringOperation.IStringCounter>, Task05.StringCountConsoleClient.StringOperation.IStringCounter {
+    public partial class StringCounterClient : System.ServiceModel.ClientBase<Task05.StringCountConsoleClient.ServiceReferenceString.IStringCounter>, Task05.StringCountConsoleClient.ServiceReferenceString.IStringCounter {
         
         public StringCounterClient() {
         }

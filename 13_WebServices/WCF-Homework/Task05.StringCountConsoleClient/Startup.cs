@@ -1,7 +1,6 @@
 ﻿namespace Task05.StringCountConsoleClient
 {
     using System;
-    using StringOperation;
 
     public class Startup
     {
@@ -12,7 +11,7 @@
             string lookingFor = "day";
             string text = "monday, tuesday, wednesday... firday";
             int count = client.FindWordOccurance(text, lookingFor);
-            
+
             Console.WriteLine("The word {0} contains {1} times.", lookingFor, count);
         }
     }
