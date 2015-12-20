@@ -1,0 +1,9 @@
+﻿footer {
+    margin-top: 75px;
+}
+
+#playGameTable td{
+    padding: 10px 40px;
+    margin: 10px 40px;
+    font-size: 50px;
+}

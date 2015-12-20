@@ -1,0 +1,12 @@
+﻿<div class="jumbotron">
+    <div class="row">        
+        <div class="col-md-6 col-md-offset-3 text-center">
+            Create a 
+            <button ng-click="vm.createGame()" class="btn btn-primary">New Game</button>
+        </div>
+        <div class="col-md-6 col-md-offset-3 text-center" ng-show="vm.showInfo">
+           <p>Your games has an Id {{ vm.gameId }} and you are waiting for opponent!</p>
+           <p>Redirecting to home page...</p>
+        </div>
+    </div>
+</div>

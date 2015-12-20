@@ -1,0 +1,27 @@
+﻿<div class="container text-center">
+
+    <h1>{{ vm.data.FirstPlayerName | userName }} X VS O {{ vm.data.SecondPlayerName | userName}}</h1>
+    <h2>{{ vm.data.State | gameStatus }}</h2>
+
+    <div class="well">
+
+        <table class="tab-pane col-md-offset-4" id="playGameTable">
+            <tr>
+                <td ng-click="vm.clicked(1,1)">{{ vm.data.Board[0] }}</td>
+                <td ng-click="vm.clicked(1,2)">{{ vm.data.Board[1] }}</td>
+                <td ng-click="vm.clicked(1,3)">{{ vm.data.Board[2] }}</td>
+            </tr>
+            <tr>
+                <td ng-click="vm.clicked(2,1)">{{ vm.data.Board[3] }}</td>
+                <td ng-click="vm.clicked(2,2)">{{ vm.data.Board[4] }}</td>
+                <td ng-click="vm.clicked(2,3)">{{ vm.data.Board[5] }}</td>
+            </tr>
+            <tr>
+                <td ng-click="vm.clicked(3,1)">{{ vm.data.Board[6] }}</td>
+                <td ng-click="vm.clicked(3,2)">{{ vm.data.Board[7] }}</td>
+                <td ng-click="vm.clicked(3,3)">{{ vm.data.Board[8] }}</td>
+            </tr>
+        </table>
+    </div>
+
+</div>
