@@ -143,7 +143,7 @@
             for (int i = 0; i < elementsLength - 1; i++)
             {
                int[] currentLine = Console.ReadLine()
-               .Split(new char[] { ' ', ',' }, StringSplitOptions.RemoveEmptyEntries)
+               .Split(new char[] { ' ', ',', ')', '(', '<', '-' }, StringSplitOptions.RemoveEmptyEntries)
                .Select(x => int.Parse(x))
                .ToArray();
 
