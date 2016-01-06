@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>NodeJS Web Server Homework</title>
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <style>
+        #labelProg {
+        display: inline;
+        position: absolute;
+        color: #eee;
+        line-height: 40px;
+        height: 40px;
+        top: 0px;
+        right: 26px;
+        text-shadow: 1px 1px #222;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <p class="navbar-brand">File Upload System</p>
+            </div>
+        </div>
+    </nav>
+    <div class="container-fluid">
+        <div class="jumbotron text-center">
+            <h1>Upload your files</h1>
+            <div class="well bs-component">
+                <form id="file-form" method="POST" class="form-horizontal">
+                    <input type="file" id="file-select" class="center-block button" name="photos" enctype="multipart/form-data" multiple/>
+                    <br>
+                    <button type="submit" id="upload-button" class="btn btn-lg btn-default">Upload</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div id="guidLinks"></div>
+    </div>
+    <script>
+        (function (data) {
+            "use strict";
+            var form = document.getElementById('file-form');
+            var fileSelect = document.getElementById('file-select');
+            function getUploadedFileNames(urlData) {
+                var parsingDone = false,
+                        currentEndIndex = 0,
+                        currentString = urlData,
+                        files = [];
+                while (!parsingDone) {
+                    currentEndIndex = currentString.indexOf('[|]');
+                    if (currentEndIndex <= 0) {
+                        if (currentString.length > 30) {
+                            files.push(currentString);
+                        }
+                        parsingDone = true;
+                        console.log(files);
+                        return files;
+                    }
+                    files.push(currentString.substring(0, currentEndIndex));
+                    currentString = currentString.substring(currentEndIndex + 3);
+                }
+            }
+            function insertFiles(files) {
+                var $fileLinkDiv = $("#guidLinks");
+                for (var file in files) {
+                    if (files.hasOwnProperty(file)) {
+                        var name = files[file];
+                        $fileLinkDiv.append('<div class="alert alert-dismissible alert-info"><a href="download/' + files[file] + '">File to download</a></br></div>');
+                    }
+                }
+            }
+            form.onsubmit = function (event) {
+                event.preventDefault();
+                var files = fileSelect.files,
+                        filesForm = new FormData();
+                for (var i = 0; i < files.length; i += 1) {
+                    var file = files[i];
+                    if (file.type ) {
+                        filesForm.append('photos', file, file.name);
+                    }
+                }
+                $.ajax({
+                    url: "upload",
+                    type: "POST",
+                    data: filesForm,
+                    success: function (msg) {
+                        insertFiles(getUploadedFileNames(msg));
+                    },
+                    cache: false,
+                    contentType: false,
+                    processData: false
+                });
+            };
+        }());
+    </script>
+</body>
+</html>
