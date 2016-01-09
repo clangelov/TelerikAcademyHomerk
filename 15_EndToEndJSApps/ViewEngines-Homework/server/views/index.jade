@@ -1,0 +1,35 @@
+doctype
+html
+    head
+        title View Engines Homework
+        meta(charset='utf-8')
+        script(type="text/javascript" src="/lib/jquery/jquery-2.1.4.min.js")
+        script(type="text/javascript" src="/lib/bootstrap/bootstrap.min.js")
+        link(rel="stylesheet" href="/css/bootstrap.css")
+        link(rel="stylesheet" href="/css/bootstrap-theme.css")
+        link(rel="stylesheet" href="/css/bootstrap-theme-min.css")
+        link(rel="stylesheet" href="/css/store.css")
+        link(rel="icon" href="../favicon.ico" type="image/x-icon")
+    body
+    .container
+        header.nav.navbar-default.navbar-fixed-top
+            .container
+                .navbar-header
+                    a.navbar-brand(href="/home") Mobile Devices Store
+                .navbar-collapse.collapse
+                    ul.nav.navbar-nav
+                        li
+                            a(href="/home") Home
+                        li
+                            a(href="/phones") Smart Phones
+                        li
+                            a(href="/tablets") Tablets
+                        li
+                            a(href="/wearables") Wearables
+
+        section
+            block main-content
+
+        footer
+            p.text-center
+                | &copy; Telerik Academy 2015/2016 Homeworks

@@ -1,0 +1,12 @@
+footer {
+    margin-top: 50px;
+}
+
+section {
+    margin-top: 75px;
+}
+
+.thumbnail img {
+    width: 320px;
+    height: 200px;
+}
