@@ -6,23 +6,23 @@ module.exports = function (app) {
         res.sendFile(path.resolve(__dirname + '/../../favicon.ico'))
     });
 
-    app.get('/home', function(req, res) {
+    app.get('/Home', function(req, res) {
         res.render('../views/home/home');
     });
 
-    app.get('/phones', function(req, res) {
+    app.get('/Phones', function(req, res) {
         res.render('../views/phones/phones');
     });
 
-    app.get('/tablets', function(req, res) {
+    app.get('/Tablets', function(req, res) {
         res.render('../views/tablets/tablets');
     });
 
-    app.get('/wearables', function(req, res) {
+    app.get('/Wearables', function(req, res) {
         res.render('../views/wearables/wearables');
     });
 
     app.get('*', function(req, res) {
-        res.redirect('/home');
+        res.redirect('/Home');
     });
 };

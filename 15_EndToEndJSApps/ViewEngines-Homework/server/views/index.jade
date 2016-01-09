@@ -18,14 +18,9 @@ html
                     a.navbar-brand(href="/home") Mobile Devices Store
                 .navbar-collapse.collapse
                     ul.nav.navbar-nav
-                        li
-                            a(href="/home") Home
-                        li
-                            a(href="/phones") Smart Phones
-                        li
-                            a(href="/tablets") Tablets
-                        li
-                            a(href="/wearables") Wearables
+                        each val in ['Home', 'Phones', 'Tablets', 'Wearables']
+                            li
+                                a(href="/" + val)=val
 
         section
             block main-content
