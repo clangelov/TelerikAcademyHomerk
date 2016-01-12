@@ -1,0 +1,21 @@
+extends ../index
+
+block main-content
+    .jumbotron.text-center()
+        .row
+            .col-md-4.col-md-offset-2
+
+                .row
+                    img.user-details-pic.img-circle.img-responsive(src="" + phone.pic)
+            .col-md-4
+                .panel.panel-warning
+                    .panel-heading
+                        h3.panel-title Phone Details
+                    .panel-body
+                        ul.list-group
+                            li.list-group-item Model:
+                                strong= phone.name
+                            li.list-group-item Price:
+                                strong= phone.price
+                            li.list-group-item Details:
+                                strong= phone.details

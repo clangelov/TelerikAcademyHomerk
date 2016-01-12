@@ -1,0 +1,17 @@
+extends ../index
+
+block main-content
+    .container
+        .jumbotron
+            h2 Our Best Selling Mobile Phones
+    .container
+        .row
+            each val in phone
+                .col-sm-4.col-lg-4.col-md-4
+                    .thumbnail
+                        img(src=val.pic, alt=val.name)
+                        .caption
+                            h4.pull-right= '$ ' +  val.price
+                            h4
+                                a(href='/phones/' + val._id)= val.name
+

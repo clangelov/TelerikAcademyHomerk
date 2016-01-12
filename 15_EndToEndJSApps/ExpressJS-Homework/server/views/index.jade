@@ -1,0 +1,43 @@
+doctype
+html
+    head
+        title ExpressJs Homework
+        meta(charset='utf-8')
+        script(type="text/javascript" src="/lib/jquery/jquery-2.1.4.min.js")
+        script(type="text/javascript" src="/lib/bootstrap/bootstrap.min.js")
+        script(type="text/javascript" src="/js/upload.js")
+        link(rel="stylesheet" href="/css/bootstrap.min.css")
+        link(rel="stylesheet" href="/css/bootstrap-theme.css")
+        link(rel="stylesheet" href="/css/bootstrap-theme-min.css")
+        link(rel="stylesheet" href="/css/store.css")
+        link(rel="icon" href="../favicon.ico" type="image/x-icon")
+    body
+    .container
+        header.navbar.navbar-default.navbar-fixed-top
+            .container
+                .navbar-header
+                    a.navbar-brand(href="/home") Mobile Devices Store
+                .navbar-collapse.collapse
+                    ul.nav.navbar-nav
+                        ul.nav.navbar-nav
+                            li
+                                a(href="/home") Home
+                            li
+                                a(href="/phones") Phones
+                            if (currentUser)
+                                li
+                                    a(href="/upload") Upload
+                                li
+                                    a(href="/logout") Logout
+                            else
+                                li
+                                    a(href="/signup") Register
+                                li
+                                    a(href="/login") Login
+
+        section
+            block main-content
+
+        footer
+            p.text-center
+                | &copy; Telerik Academy 2015/2016 Homeworks

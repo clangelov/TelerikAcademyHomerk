@@ -1,0 +1,26 @@
+{
+  "name": "view-engine-homework",
+  "version": "1.0.0",
+  "description": "homework",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "myslef",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.14.2",
+    "connect-busboy": "0.0.2",
+    "cookie-parser": "^1.4.1",
+    "express": "^4.13.3",
+    "express-session": "^1.13.0",
+    "fs": "0.0.2",
+    "jade": "^1.11.0",
+    "mongoose": "^4.3.5",
+    "passport": "^0.3.2",
+    "passport-local": "^1.0.0",
+    "path": "^0.12.7",
+    "stylus": "^0.53.0"
+  }
+}
