@@ -1,0 +1,22 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="jumbotron">
+    <h2>ASP.NET Homework</h2>
+    @using (Html.BeginForm("Sum", "Home"))
+    {
+        <span>First Number: </span>
+        <input id="firstNumber" name="firstNumber" type="number" />
+        <br />
+        <span>Seond Number: </span>
+        <input id="secondNumber" name="secondNumber" type="number" />
+        <br />
+        <input type="submit" value="Sum Numbers" />
+    }
+
+    @if (ViewBag.Sum != null)
+    {
+        <h3 id="sumResult">@ViewBag.Sum</h3>
+    }
+</div>
