@@ -1,0 +1,17 @@
+﻿.btn.myequals {
+    width: 150px;
+    font-size: 25px;
+    text-align: center;
+    margin-left: 40px;
+}
+
+.btn.mybtn {
+    width: 50px;
+    font-size: 25px;
+    text-align: center;
+    margin: 2px;
+}
+
+.row-fluid.myresult {
+    font-size: 25px;
+}
