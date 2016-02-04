@@ -1,0 +1,73 @@
+﻿@model IEnumerable<Task02.BitCalculator.Models.DataViewModel>
+@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="container">
+    <br />
+    <div class="jumbotron">
+        <div class="row text-center">
+            <div class="col-md-6 col-md-offset-3 text-center">
+                <h1>
+                    <img src="http://sf.gwebtools.com/images/icons/binaryIcon.png">
+                    Bit Calculator
+                </h1>
+                    <form action="" method="get" class="form-horizontal">
+                        <fieldset>
+                            <div class="form-group">
+                                <label for="Quantity" class="col-lg-2 control-label">Quantity</label>
+                                <div class="col-lg-10">
+                                    <input type="number" class="form-control" id="Quantity" placeholder="Quantity"
+                                           value="@((ViewBag.Quantity == 0 || ViewBag.Quantity == null) ? 1 : ViewBag.Quantity)">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="select" class="col-lg-2 control-label">Type</label>
+                                <div class="col-lg-10">
+                                    <select class="form-control" id="select" name="type">
+                                        @foreach (var item in Model)
+                                        {
+                                            <option value="@item.Name" selected="@(ViewBag.SelectedType == item.Name ? true : false )">@item.Name</option>
+                                        }
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="select" class="col-lg-2 control-label">Kilo</label>
+                                <div class="col-lg-10">
+                                    <select class="form-control" id="select" name="type">
+                                        <option value="1000" selected="@(ViewBag.SelectedKilo == 1000 ? true : false)">1000</option>
+                                        <option value="1024" selected="@(ViewBag.SelectedKilo == 1024 ? true : false)">1024</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-lg-10 col-lg-offset-2">
+                                    <input type="submit" value="Calculate" class="btn btn-lg btn-primary" />
+                                </div>
+                            </div>
+                        </fieldset>
+                    </form>
+            </div>
+        </div>
+        <div class="bs-component">
+            <table class="table table-striped table-hover ">
+                <thead>
+                    <tr>
+                        <th class="text-center">Name</th>
+                        <th class="text-center">Value</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in Model)
+                    {
+                        <tr>
+                            <td class="text-center">@item.Name</td>
+                            <td class="text-center">@item.Value</td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

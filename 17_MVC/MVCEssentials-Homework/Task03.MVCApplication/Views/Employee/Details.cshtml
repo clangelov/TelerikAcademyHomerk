@@ -1,0 +1,70 @@
+﻿@model Task03.MVCApplication.Employee
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div class="jumbotron">
+    <div class="row">
+        <div class="col-md-6 col-md-offset-3">
+            <dl class="dl-horizontal">
+                <dt>
+                    @Html.DisplayNameFor(model => model.FirstName)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.FirstName)
+                </dd>
+
+                <dt>
+                    @Html.DisplayNameFor(model => model.LastName)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.LastName)
+                </dd>
+
+                <dt>
+                    @Html.DisplayNameFor(model => model.JobTitle)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.JobTitle)
+                </dd>
+
+                <dt>
+                    Department
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.Department.Name)
+                </dd>
+
+                <dt>
+                    @Html.DisplayNameFor(model => model.HireDate)
+                </dt>
+
+                <dd>
+                    @Html.ValueFor(model => model.HireDate, "{0:dd/MM/yyyy}")
+                </dd>
+
+                <dt>
+                    @Html.DisplayNameFor(model => model.Salary)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.Salary)
+                </dd>
+
+            </dl>
+        </div>
+    </div>
+    <p>
+        @Html.ActionLink("Back to List", "TopPaid")
+    </p>
+</div>
+
+@{Html.RenderPartial("_AddressDetail", Model);};
+

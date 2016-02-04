@@ -1,0 +1,30 @@
+﻿@model IEnumerable<Task03.MVCApplication.Department>
+@{
+    ViewBag.Title = "All";
+}
+
+<div class="jumbotron">
+    <div class="row">
+        <div class="col-md-8 col-md-offset-2">
+            <div class="bs-component">
+                <table class="table table-striped table-hover ">
+                    <thead>
+                        <tr>
+                            <th class="text-center">@Html.DisplayNameFor(model => model.Name)</th>
+                            <th class="text-center">Employees Count</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var item in Model)
+                        {
+                            <tr>
+                                <td class="text-center">@item.Name</td>
+                                <td class="text-center">@item.Employees.Count</td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>

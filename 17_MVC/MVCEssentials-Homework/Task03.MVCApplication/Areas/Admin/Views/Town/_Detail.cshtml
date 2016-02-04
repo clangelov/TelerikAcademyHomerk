@@ -1,0 +1,23 @@
+﻿@model Task03.MVCApplication.Town
+
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@{
+    ViewBag.Title = "_Detail";
+}
+
+<div class="jumbotron">
+    <div class="row">
+        <div class="col-md-6 col-md-offset-3">
+            <p>@string.Format("New Town Added with Id {0} and Name {1}", Model.TownID, Model.Name) </p>
+        </div>
+    </div>
+    <p>
+        @Html.ActionLink("Back to List", "Add")
+    </p>
+</div>
+
+
+

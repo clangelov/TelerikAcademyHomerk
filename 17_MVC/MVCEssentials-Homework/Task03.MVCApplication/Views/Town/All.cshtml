@@ -1,0 +1,31 @@
+﻿@model IEnumerable<Task03.MVCApplication.Town>
+
+@{
+    ViewBag.Title = "All";
+}
+
+<div class="jumbotron">
+    <div class="row">
+        <div class="col-md-8 col-md-offset-2">
+            <div class="bs-component">
+                <table class="table table-striped table-hover ">
+                    <thead>
+                        <tr>
+                            <th class="text-center">Town</th>
+                            <th class="text-center">Addresses Count</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var item in Model)
+                        {
+                            <tr>
+                                <td class="text-center">@item.Name</td>
+                                <td class="text-center">@item.Addresses.Count</td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>

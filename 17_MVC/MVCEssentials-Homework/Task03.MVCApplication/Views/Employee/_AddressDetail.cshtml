@@ -1,0 +1,27 @@
+﻿@model Task03.MVCApplication.Employee
+
+<h3>Partial View</h3>
+
+<div class="jumbotron">
+    <div class="row">
+        <div class="col-md-6 col-md-offset-3">
+            <dl class="dl-horizontal">
+                <dt>
+                    @Html.DisplayNameFor(model => model.Address.Town)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.Address.Town.Name)
+                </dd>
+
+                <dt>
+                    @Html.DisplayNameFor(model => model.Address)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.Address.AddressText)
+                </dd>
+            </dl>
+        </div>
+    </div>
+</div>
