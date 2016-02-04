@@ -1,0 +1,74 @@
+﻿@model IEnumerable<Movies.MVC.Models.MovieViewModel>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create", null, null, new { @class = "btn btn-primary" })
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Title)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Director)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.MaleActorName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.FemaleActorName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Year)
+        </th>
+        <th>
+            Delete Movie
+        </th>
+        <th>
+            Edit Movie
+        </th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Title)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Director)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.MaleActorName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.FemaleActorName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Year)
+        </td>
+        <td>
+            @Ajax.ActionLink("Delete", "Delete", new { id = item.Id },
+                new AjaxOptions
+                {
+                    HttpMethod = "GET",
+                    InsertionMode = InsertionMode.Replace,
+                    OnComplete = "function() { $(this).parent().parent().remove() }"
+                }, new { @class = "btn btn-danger" })
+        </td>
+        <td>
+            @Ajax.ActionLink("Edit", "Edit", new { id = item.Id },
+                new AjaxOptions
+                {
+                    HttpMethod = "GET",
+                    InsertionMode = InsertionMode.Replace
+                }, new { @class = "btn btn-warning" })
+        </td>
+    </tr>
+}
+
+</table>

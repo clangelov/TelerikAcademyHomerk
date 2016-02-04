@@ -1,0 +1,68 @@
+﻿@model IEnumerable<Movies.Data.Models.Actor>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create", null, null, new { @class = "btn btn-primary" })
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Age)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Studio)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.StudioAdress)
+        </th>
+        <th>
+            Delete Actor
+        </th>
+        <th>
+            Edit Actor
+        </th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Name)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Age)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Studio)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.StudioAdress)
+        </td>
+        <td>
+            @Ajax.ActionLink("Delete", "Delete", new { id = item.Id },
+                new AjaxOptions
+                {
+                    HttpMethod = "GET",
+                    InsertionMode = InsertionMode.Replace,
+                    OnComplete = "function() { $(this).parent().parent().remove() }"
+                }, new { @class = "btn btn-danger" })
+        </td>
+        <td>
+            @Ajax.ActionLink("Edit", "Edit", new { id = item.Id },
+                new AjaxOptions
+                {
+                    HttpMethod = "GET",
+                    InsertionMode = InsertionMode.Replace
+                }, new { @class = "btn btn-warning" })
+        </td>
+    </tr>
+}
+
+</table>
