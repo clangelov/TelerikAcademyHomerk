@@ -1,0 +1,55 @@
+﻿@model IEnumerable<Twitter.MVC.Models.TweetViewModel>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<div class="jumbotron">
+    <h2>Tweeter Like Applicaion</h2>
+    <p>For Admin login: master@gmail.com & 123456</p>
+    <p>For User login: student@gmail.com & 123456</p>
+    @if (ViewContext.HttpContext.User.Identity.IsAuthenticated)
+    {
+        @Html.ActionLink("Create", "Create");
+    }
+</div>
+
+<div class="jumbotron">
+    <table class="table">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Content)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Created)
+            </th>
+            <th>
+                Tags
+            </th>
+        </tr>
+
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Content)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Created)
+                </td>
+                <td>
+                    @foreach (var tag in item.Tags)
+                    {
+                        @Ajax.ActionLink(tag.ToString(), "Tag", new { id = tag },
+                            new AjaxOptions
+                            {
+                                HttpMethod = "GET",
+                                InsertionMode = InsertionMode.Replace
+                            }, new { @class = "btn-sm btn-primary" })
+                    }
+                </td>
+            </tr>
+        }
+    </table>
+</div>
+
