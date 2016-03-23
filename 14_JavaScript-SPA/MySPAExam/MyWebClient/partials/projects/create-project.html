@@ -1,0 +1,46 @@
+﻿<div class="container">
+    <div class="col-md-6 col-md-offset-3">
+        <form class="form-horizontal" name="projectForm"
+              ng-submit="projectForm.$valid"
+              novalidate="novalidate">
+            <fieldset>
+                <legend>Create a Project</legend>
+                <div class="text-center error" ng-show="projectForm.name.$error.maxlength">Name can be at maximum 100 symbols</div>
+                <div class="form-group">
+                    <label for="prName" class="col-lg-2 control-label">Name</label>
+                    <div class="col-lg-10">
+                        <input type="text" name="name" ng-model="newProject.name" ng-maxlength="100" class="form-control" id="prName" required="required" plceholder="Name">
+                    </div>
+                </div>
+                <div class="text-center error" ng-show="projectForm.description.$error.maxlength">Name can be at maximum 1000 symbols</div>
+                <div class="form-group">
+                    <label for="prDescription" class="col-lg-2 control-label">Description</label>
+                    <div class="col-lg-10">
+                        <input type="text" name="description" ng-model="newProject.description" ng-maxlength="1000" class="form-control" id="prDescription" required="required" plceholder="Description">
+                    </div>
+                </div>
+                <div class="row col-md-offset-2">
+                    <div class="checkbox">
+                        Is the repo private
+                        <label>
+                            <input type="checkbox" ng-model="newProject.private">
+                        </label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="to" class="col-lg-2 control-label">Licence Type</label>
+                    <div class="col-md-10">
+                        <select class="form-control" id="to" ng-model="newProject.licenseId" required="required">
+                            <option ng-repeat="licence in vm.myLicences" value="{{licence.Id}}">{{licence.Name}}</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-lg-10 col-lg-offset-2">
+                        <button ng-click="vm.createProject(newProject)" ng-disabled="projectForm.$invalid" class="btn btn-primary">Create</button>
+                    </div>
+                </div>
+            </fieldset>
+        </form>
+    </div>
+</div>

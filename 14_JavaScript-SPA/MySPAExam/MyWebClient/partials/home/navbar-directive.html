@@ -1,0 +1,23 @@
+﻿<nav class="navbar navbar-default">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="/">Source Controlls</a>
+        </div>
+
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <li><a href="/projects">Projects</a></li>
+            </ul>
+
+            <ul class="nav navbar-nav navbar-right" ng-if="!vm.globallySetCurrentUser">
+                <li><a href="/login">Login</a></li>
+                <li><a href="/register">Register</a></li>
+            </ul>
+
+            <ul class="nav navbar-nav navbar-right" ng-if="vm.globallySetCurrentUser">
+                <li><a href="/">Hi, {{vm.globallySetCurrentUser.Email}} !</a></li>
+                <li><a href="/" ng-click="vm.logout()">Logout</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>

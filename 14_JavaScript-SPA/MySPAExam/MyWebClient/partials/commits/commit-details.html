@@ -1,0 +1,25 @@
+﻿<div class="container-fluid">
+    <div class="panel panel-warning">
+        <div class="panel-heading">
+            <h3 class="panel-title">Details About commit {{vm.id}}</h3>
+        </div>
+        <div class="panel-body text-center">
+            <div>
+                User Name:
+                <strong>{{ vm.currentCommit.UserName }}</strong>
+            </div>
+            <div>
+                Source Code:
+                <strong>{{vm.currentCommit.SourceCode}}</strong>
+            </div>
+            <div>
+                Created On:
+                <strong>{{vm.currentCommit.CreatedOn | beautifulDate}}</strong>
+            </div>
+            <div>
+                Project Name:
+                <strong>{{vm.currentCommit.ProjectName}}</strong>
+            </div>
+        </div>
+    </div>
+</div> 

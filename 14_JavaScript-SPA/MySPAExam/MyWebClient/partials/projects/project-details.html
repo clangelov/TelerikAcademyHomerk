@@ -1,0 +1,67 @@
+﻿<div class="container-fluid">
+    <div class="jumbotron text-center">
+        <h2>Project: {{vm.currentProject.Name}}</h2>
+        <button ng-click="vm.redirect()" class="btn btn-primary pull-right">Add Commit</button>
+        <button ng-if="vm.isCollaborator" ng-click="vm.show = !vm.show" class="btn btn-primary pull-left">Add Contributor</button>
+    </div>
+    <div class="row text-center">
+        <div class="col-md-4">
+            Project was  created on:
+            <strong>{{ vm.currentProject.CreatedOn | beautifulDate }}</strong>
+        </div>
+        <div class="col-md-4">
+            Total Users:
+            <strong>{{ vm.currentProject.TotalUsers }}</strong>
+        </div>
+        <div class="col-md-4">
+            License
+            <strong>{{ vm.currentProject.License }}</strong>
+        </div>
+    </div>
+    <br />   
+    <div ng-if="vm.show" class="text-center">
+        <form class="form-horizontal" name="conForm"
+              ng-submit="conForm.$valid"
+              novalidate="novalidate">
+            <fieldset>
+                <legend>Add a Contributor</legend>
+                <div class="text-center error" ng-show="conForm.userMail.$error.pattern">Email is not valid !</div>
+                <div class="form-group">
+                    <label for="inputEmail" class="col-lg-2 control-label">Email</label>
+                    <div class="col-lg-10">
+                        <input name="userMail" type="text" ng-model="username" class="form-control" id="inputEmail" required="required" placeholder="Email"
+                               ng-pattern="/^([0-9a-zA-Z]([-.\w]*[0-9a-zA-Z])*@([0-9a-zA-Z][-\w]*[0-9a-zA-Z]\.)+[a-zA-Z]{2,9})$/">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-lg-10 col-lg-offset-2">
+                        <button ng-click="vm.AddContributor(username)" ng-disabled="conForm.$invalid" class="btn btn-primary">Create</button>
+                    </div>
+                </div>
+            </fieldset>
+        </form>
+    </div>   
+
+    <div class="container-fluid" ng-if="vm.currentPersons.length != 0">
+        <div class="panel panel-primary">
+            <div class="panel-heading text-center">
+                <h3 class="panel-title">All Collaborators</h3>
+            </div>
+            <ul ng-repeat="person in vm.currentPersons">
+                <li>{{person}}</li>
+            </ul>
+        </div>
+    </div>
+    <br />
+    <div class="container-fluid" ng-if="vm.currentCommits.length != 0">
+        <div class="panel panel-primary">
+            <div class="panel-heading text-center">
+                <h3 class="panel-title">All Commits</h3>
+            </div>
+            <commits-directive></commits-directive>
+        </div>
+    </div>
+    <div class="container-fluid text-center" ng-if="vm.currentCommits.length == 0">
+        <h2>No Commits to this project</h2>        
+    </div>
+</div> 

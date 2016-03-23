@@ -1,0 +1,55 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Source Controll System</title>
+	<meta charset="utf-8" />
+    <base href="/" />
+    <script src="lib/jquery/jquery-2.1.4.min.js"></script>
+    <script src="lib/toastr/toastr.min.js"></script>
+    <script src="lib/bootstrap/bootstrap.min.js"></script>
+    <script src="lib/angular/angular.js"></script>
+    <script src="lib/angular/angular-route.min.js"></script>
+    <script src="lib/angular/angular-cookies.min.js"></script>
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../css/bootstrap-theme.min.css" />
+    <link rel="stylesheet" href="../css/toastr.min.css" />
+    <link rel="stylesheet" href="../css/app.css" />
+</head>
+<body ng-app="myApp" ng-cloak ng-controller="MainController as vm">
+    <div class="container">
+        <!--Navigation-->
+        <div class="bs-component">
+            <display-nabvar></display-nabvar>
+        </div>
+        <!--Body-->
+        <div ng-view>
+
+        </div>
+        <!--Footer-->
+        <display-footer></display-footer>
+    </div>
+    <script src="js/app.js"></script>
+    <script src="js/common/data-service.js"></script>
+    <script src="js/common/main-controller.js"></script>
+    <script src="js/common/notifier.js"></script>
+    <script src="js/common/beautiful-date.js"></script>
+    <script src="js/identity/auth-service.js"></script>
+    <script src="js/identity/identity-service.js"></script>
+    <script src="js/identity/login-controller.js"></script>
+    <script src="js/identity/register-controller.js"></script>
+    <script src="js/home/navigation-directive.js"></script>
+    <script src="js/home/footer-directive.js"></script>
+    <script src="js/home/home-controller.js"></script>
+    <script src="js/home/stats-service.js"></script>
+    <script src="js/projects/projects-direcitve.js"></script>
+    <script src="js/projects/projects-controller.js"></script>
+    <script src="js/projects/projects-service.js"></script> 
+    <script src="js/projects/create-project-controller.js"></script>
+    <script src="js/projects/license-service.js"></script>
+    <script src="js/projects/projects-details-controller.js"></script>
+    <script src="js/commits/commits-service.js"></script>
+    <script src="js/commits/commits-directive.js"></script>
+    <script src="js/commits/commits-details-controller.js"></script>
+    <script src="js/commits/commit-create-controller.js"></script>
+</body>
+</html>

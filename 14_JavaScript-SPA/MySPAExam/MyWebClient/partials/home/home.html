@@ -1,0 +1,41 @@
+﻿<div>
+    <div class="jumbotron text-center">
+        <h2>Source Controll System</h2>
+        <h3>The best place to collaborate with HTML 5 Mode routes</h3>
+        <h4># are not sexy :)</h4>
+    </div>
+    <div class="jumbotron text-center">
+        <div class="row">
+            <div class="col-md-4">
+                <div><strong>Users</strong></div>
+                <div><span>{{ vm.allStats.Users }}</span></div>
+            </div>
+            <div class="col-md-4">
+                <div><strong>Projects</strong></div>
+                <div><span>{{ vm.allStats.Projects }}</span></div>
+            </div>
+            <div class="col-md-4">
+                <div><strong>Commits</strong></div>
+                <div><span>{{ vm.allStats.Commits }}</span></div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6">
+            <div class="panel panel-default">
+                <div class="panel-heading text-center">
+                    <h3 class="panel-title">Latest Projects</h3>
+                </div>
+                <projects-directive></projects-directive>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="panel panel-default">
+                <div class="panel-heading text-center">
+                    <h3 class="panel-title">Latest Commits</h3>
+                </div>
+                <commits-directive></commits-directive>
+            </div>
+        </div>
+    </div>
+</div>
